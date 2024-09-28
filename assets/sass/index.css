@@ -578,7 +578,70 @@ body {
 }
 
 .footer-container {
-  border: 1px solid #000;
+  background: #000;
   width: 100%;
-  height: 612.76;
+  height: 637.1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_inner-container {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/footer-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 0 bottom 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__logo-box, .footer__link-box, .footer__info-box, .footer__link-social-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70%;
+}
+
+.footer-allrihts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70.59px;
+}
+
+.footer-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 162%;
+  text-transform: capitalize;
+  color: white;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  text-transform: capitalize;
+  color: #cdcdcd;
+  font-family: "Barlow", sans-serif;
+}
+
+.footer-text:hover {
+  color: #FB5B11;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #cdcdcd;
+}
+
+.footer-link:visited {
+  color: #cdcdcd;
+}
+
+.footer-link:hover {
+  color: #FB5B11;
 }/*# sourceMappingURL=index.css.map */
