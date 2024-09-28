@@ -16,6 +16,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -280,7 +281,7 @@ body {
 
 .banner {
   position: relative;
-  background: url("../images/crane.jpg"), linear-gradient(180deg, rgba(14, 14, 14, 0.3) 0%, rgba(14, 14, 14, 0.7) 100%);
+  background: url("../images/crane.webp"), linear-gradient(180deg, rgba(14, 14, 14, 0.3) 0%, rgba(14, 14, 14, 0.7) 100%);
   background-size: 200% auto;
   background-position: center;
   background-blend-mode: darken;
@@ -391,10 +392,16 @@ body {
 }
 @keyframes bounceDown {
   0%, 100% {
-    transform: translateY(-2px);
+    transform: translateY(-100px);
+  }
+  20% {
+    transform: translateY(-50px);
   }
   50% {
-    transform: translateY(-40px);
+    transform: translateY(0px);
+  }
+  70% {
+    transform: translateY(-50px);
   }
 }
 
