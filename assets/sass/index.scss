@@ -20,17 +20,15 @@ body {
 .header-container {
     width: 100%;
     height: 156px;
-    border: 1px solid #000;
     display: flex;
 }
 
 .header-inner-container {
     width: 100%;
     height: 145px;
-    border: 1px solid red;
     background: #000;
-   display:grid;
-   grid-template-columns: 25% 75%;
+    display:grid;
+    grid-template-columns: 25% 75%;
 }
 
 .header-logo {
@@ -38,7 +36,6 @@ body {
 }
 
 .header__menu-container {
-    border: 1px solid green;
     grid-column: 2;
     height: 100%;
     display: flex;
@@ -46,7 +43,6 @@ body {
     width: 100%;
 }
 .header_main-menu {
-    border: 1px solid blue;
     width: 100%;
     height: 145px;
     display: flex;
@@ -55,7 +51,6 @@ body {
 }
 
 .header__main-menu_contacts, .header__main-menu_contacts-wrap{
-border: 1px solid rgb(183, 28, 77);
 width: 100%;
 height: 35%;
 font-weight: 400;
@@ -74,6 +69,7 @@ justify-content: space-around;
     gap: 8px;
     justify-content: space-around;
     padding-right: 16px;
+    padding-left: 16px;
 }
 .header-menu__adress, .header-menu__mail, .header-menu__time{
     display: flex;
@@ -95,15 +91,54 @@ color: #FB5B11;
 }
 
 .header__main-menu_nav-bar {
-    border: 1px solid#cb0202;
-    width: 100%;
+    align-self: flex-end;
+    border-top: 1px solid #cdcdcd;
+    width: 92%;
     height: 100%;
+    display: flex;
+    gap: 1%;
+    justify-content: space-around;
+    color: var(#cdcdcd);
+    font-family: "Barlow", sans-serif;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 162%;
+    text-transform: capitalize;
+    color: white;
+}
+
+.header-nav-bar__link {
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 162%;
+    text-transform: capitalize;
+    color: white;
+}
+
+.header-nav-bar__link:visited {
+    color: white;
+}
+
+.header-nav-bar__link:hover {
+    color: #FB5B11;
 }
 
 .header_side-bar {
-    border: 1px solid yellow;
+    border-left: 1px solid #cdcdcd;
     width: 20%;
     height: 145px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.header-btn {
+    @include button(60px);
 }
 
 // header end
