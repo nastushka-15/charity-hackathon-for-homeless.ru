@@ -413,6 +413,35 @@ body {
     transform: translateY(0) scale(1);
   }
 }
+.projects {
+  margin-top: 300px;
+}
+.projects .projects__subheading,
+.projects .projects__heading {
+  margin-left: 312px;
+}
+.projects .projects__subheading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  font-family: "JostBold";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 162%;
+  margin-bottom: 15px;
+}
+.projects .projects__swiper-wrapper {
+  width: 100%;
+  height: 443px;
+}
+.projects .projects__swiper-wrapper .projects__swiper-slide {
+  height: 100%;
+}
+.projects .projects__swiper-wrapper .projects__swiper-slide img {
+  height: 443px;
+}
+
 .header-container {
   overflow: visible;
   width: 100%;
