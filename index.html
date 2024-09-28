@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/sass/index.css" />
     <title>Conbuild</title>
+    <script src="https://kit.fontawesome.com/3b773055fe.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header></header>
     <main>
         <!-- banner section Женя -->
-        <section class="banner">
+        <section class="banner" id="Home">
             <div class="banner-container">
                 <div class="banner__info">
                     <h1 class="banner__info--title">Experts in construction</h1>
@@ -63,7 +64,24 @@
 
 
         <!-- Our Projects  Женя-->
-
+        <section class="projects" id="Projects">
+            <div class="projects__subheading">
+                <img src="./assets/images/processLine.png" alt="orange line">
+                <span>Our Projects</span>
+            </div>
+            <h3 class="projects__heading">Trusted & Reliable</h3>
+            <div class="swiper">
+                <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left-long"></i></div>
+                <div class="swiper-button-next"><i class="fa-solid fa-arrow-right-long"></i></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/images/project1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/project2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/project3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/project4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/project5.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
         <!-- Our Projects  End-->
 
 
@@ -104,6 +122,7 @@
     <footer></footer>
 
     <script src="./script.js"></script>
+    <script type="module" src="./projects.mjs"></script>
 </body>
 
 </html>
