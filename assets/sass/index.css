@@ -475,6 +475,7 @@ body {
 .projects .swiper-header .swiper-controls {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 .projects .swiper-header .swiper-controls .projects__swiper-button-prev,
 .projects .swiper-header .swiper-controls .projects__swiper-button-next {
@@ -482,6 +483,7 @@ body {
   margin: 0;
   padding: 0;
   color: #555555;
+  font-size: 30px;
 }
 .projects .swiper-header .swiper-controls .projects__swiper-button-prev:hover,
 .projects .swiper-header .swiper-controls .projects__swiper-button-next:hover {

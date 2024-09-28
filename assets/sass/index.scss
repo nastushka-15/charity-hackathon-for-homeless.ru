@@ -509,6 +509,7 @@ body {
         .swiper-controls {
             display: flex;
             align-items: center;
+            gap: 1rem;
 
             .projects__swiper-button-prev,
             .projects__swiper-button-next {
@@ -516,6 +517,7 @@ body {
                 margin: 0;
                 padding: 0;
                 color: $gray-text;
+                font-size: 30px;
 
                 &:hover {
                     color: $accent-color;
