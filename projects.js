@@ -1,4 +1,5 @@
 import Swiper from "swiper";
+import './node_modules/swiper/swiper-bundle.min.css'
 
 const swiper = new Swiper('.projects__swiper', {
     spaceBetween: 30,
