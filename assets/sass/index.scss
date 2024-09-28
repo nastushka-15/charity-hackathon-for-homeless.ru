@@ -12,3 +12,95 @@ body {
     margin: 0 auto;
     font-family: "Barlow";
 }
+
+// header start
+.header-container {
+    width: 100%;
+    height: 156px;
+    border: 1px solid #000;
+    display: flex;
+}
+
+.header-inner-container {
+    width: 100%;
+    height: 145px;
+    border: 1px solid red;
+    background: #000;
+   display:grid;
+   grid-template-columns: 25% 75%;
+}
+
+.header-logo {
+    grid-column: 1;
+}
+
+.header__menu-container {
+    border: 1px solid green;
+    grid-column: 2;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.header_main-menu {
+    border: 1px solid blue;
+    width: 100%;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.header__main-menu_contacts, .header__main-menu_contacts-wrap{
+border: 1px solid rgb(183, 28, 77);
+width: 100%;
+height: 35%;
+font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+text-transform: capitalize;
+color: var(#cdcdcd);
+font-family: "Barlow", sans-serif;
+align-items: center;
+display: flex;
+justify-content: space-around;
+}
+
+.header__main-menu_icons-wrap{
+    display: flex;
+    gap: 8px;
+    justify-content: space-around;
+    padding-right: 16px;
+}
+.header-menu__adress, .header-menu__mail, .header-menu__time{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header__gmail-link, .header-adress {
+    text-decoration: none;
+    color:#cdcdcd;
+}
+
+.header__gmail-link:visited {
+    color: #cdcdcd;
+}
+.header-menu__hover:hover {
+color: #FB5B11;
+}
+
+.header__main-menu_nav-bar {
+    border: 1px solid#cb0202;
+    width: 100%;
+    height: 100%;
+}
+
+.header_side-bar {
+    border: 1px solid yellow;
+    width: 20%;
+    height: 145px;
+}
+
+// header end
