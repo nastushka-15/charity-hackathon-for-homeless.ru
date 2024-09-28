@@ -18,66 +18,86 @@ body {
 
 // banner section Женя
 .banner {
-    padding-top: 49px;
-    padding-bottom: 72px;
     position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background: url('../images/crane.jpg'), linear-gradient(180deg, rgba(14, 14, 14, 0.3) 0%, rgba(14, 14, 14, 0.7) 100%);
-    background-size: 100%;
+    background-size: 200% auto;
+    background-position: center;
     background-blend-mode: darken;
 
     @media (max-width: 768px) {
-        flex-direction: column;
+        padding-bottom: 40px;
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
-    .banner__info {
-        max-width: 901px;
-        color: white;
+    .banner-container {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90%;
 
-        .banner__info--title {
-            margin-bottom: 0;
-            font-family: "JostBold";
-            font-size: clamp(60px, 10vw, 158px);
-            line-height: 87%;
-            text-transform: capitalize
+        @media (max-width: 768px) {
+            flex-direction: column;
         }
 
-        .banner__info--text {
-            margin-bottom: 49px;
-            max-width: 756px;
-            font-size: clamp(16px, 2.5vw, 24px);
-            line-height: 142%;
-        }
+        .banner__info {
+            margin: 199px 0;
+            max-width: 901px;
+            color: white;
 
-        .banner__info--button {
-            @include button(192px);
+            @media (max-width: 768px) {
+                margin: 2rem 0;
+            }
 
-            .button__image {
-                width: 22px;
-                height: 100%;
+            .banner__info--title {
+                margin-bottom: 0;
+                font-family: "JostBold";
+                font-size: clamp(70px, 10vw, 158px);
+                line-height: 87%;
+                text-transform: capitalize
+            }
+
+            .banner__info--text {
+                margin-bottom: 49px;
+                max-width: 756px;
+                font-size: clamp(20px, 2.5vw, 24px);
+                line-height: 142%;
+            }
+
+            .banner__info--button {
+                @include button(192px);
+
+                .button__image {
+                    width: 22px;
+                    height: 100%;
+                }
             }
         }
-    }
 
-    .banner__image {
-        max-width: 606px;
-        background-image: url('../images/banner-bg.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: right 0 bottom 0;
+        .banner__image {
+            max-width: 606px;
+            background-image: url('../images/banner-bg.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right 0 bottom 0;
 
-        .banner__image--pic {
-            max-width: 100%;
+            .banner__image--pic {
+                width: 100%;
+            }
         }
     }
 
     .banner__machine {
         position: absolute;
         left: 35%;
-        bottom: -157px;
-        max-width: 539px;
+        bottom: -17%;
+        width: min(539px, 40vw);
+
+        .banner__machine--pic {
+            max-width: 100%;
+        }
 
         @media (max-width: 768px) {
             display: none;

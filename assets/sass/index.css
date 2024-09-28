@@ -29,39 +29,56 @@ body {
 }
 
 .banner {
-  padding-top: 49px;
-  padding-bottom: 72px;
   position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background: url("../images/crane.jpg"), linear-gradient(180deg, rgba(14, 14, 14, 0.3) 0%, rgba(14, 14, 14, 0.7) 100%);
-  background-size: 100%;
+  background-size: 200% auto;
+  background-position: center;
   background-blend-mode: darken;
 }
 @media (max-width: 768px) {
   .banner {
+    padding-bottom: 40px;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.banner .banner-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+}
+@media (max-width: 768px) {
+  .banner .banner-container {
     flex-direction: column;
   }
 }
-.banner .banner__info {
+.banner .banner-container .banner__info {
+  margin: 199px 0;
   max-width: 901px;
   color: white;
 }
-.banner .banner__info .banner__info--title {
+@media (max-width: 768px) {
+  .banner .banner-container .banner__info {
+    margin: 2rem 0;
+  }
+}
+.banner .banner-container .banner__info .banner__info--title {
   margin-bottom: 0;
   font-family: "JostBold";
-  font-size: clamp(60px, 10vw, 158px);
+  font-size: clamp(70px, 10vw, 158px);
   line-height: 87%;
   text-transform: capitalize;
 }
-.banner .banner__info .banner__info--text {
+.banner .banner-container .banner__info .banner__info--text {
   margin-bottom: 49px;
   max-width: 756px;
-  font-size: clamp(16px, 2.5vw, 24px);
+  font-size: clamp(20px, 2.5vw, 24px);
   line-height: 142%;
 }
-.banner .banner__info .banner__info--button {
+.banner .banner-container .banner__info .banner__info--button {
   height: 60px;
   width: 192px;
   background-image: linear-gradient(to right, #fb5b11 0%, #f17e49 51%, #fb5b11 100%);
@@ -78,33 +95,36 @@ body {
   box-shadow: 0 0 10px #555555;
   cursor: pointer;
 }
-.banner .banner__info .banner__info--button:hover {
+.banner .banner-container .banner__info .banner__info--button:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
 }
-.banner .banner__info .banner__info--button:active {
+.banner .banner-container .banner__info .banner__info--button:active {
   transform: scale(0.99);
 }
-.banner .banner__info .banner__info--button .button__image {
+.banner .banner-container .banner__info .banner__info--button .button__image {
   width: 22px;
   height: 100%;
 }
-.banner .banner__image {
+.banner .banner-container .banner__image {
   max-width: 606px;
   background-image: url("../images/banner-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right 0 bottom 0;
 }
-.banner .banner__image .banner__image--pic {
-  max-width: 100%;
+.banner .banner-container .banner__image .banner__image--pic {
+  width: 100%;
 }
 .banner .banner__machine {
   position: absolute;
   left: 35%;
-  bottom: -157px;
-  max-width: 539px;
+  bottom: -17%;
+  width: min(539px, 40vw);
+}
+.banner .banner__machine .banner__machine--pic {
+  max-width: 100%;
 }
 @media (max-width: 768px) {
   .banner .banner__machine {
