@@ -166,8 +166,9 @@ body {
   }
 }
 .header-container {
+  overflow: visible;
   width: 100%;
-  height: 156px;
+  height: 145px;
   display: flex;
 }
 
@@ -181,6 +182,7 @@ body {
 
 .header-logo {
   grid-column: 1;
+  z-index: 1;
 }
 
 .header__menu-container {
