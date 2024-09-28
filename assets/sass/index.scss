@@ -532,6 +532,17 @@ body {
             width: 623px;
             overflow: hidden;
 
+            &:hover {
+                img {
+                    filter: brightness(0.3);
+                    transition: all .2s ease;
+                }
+
+                .project__info {
+                    display: block;
+                }
+            }
+
             @media (max-width: 768px) {
                 max-width: 100%;
             }
@@ -542,9 +553,34 @@ body {
 
             .project__info {
                 position: absolute;
-                left: 10px;
-                bottom: 10px;
-                // display: none;
+                left: 30px;
+                bottom: 30px;
+                display: none;
+
+                .project__type {
+                    margin-bottom: 20px;
+                    padding-top: 5px;
+                    width: 116px;
+                    height: 36px;
+                    background-color: $accent-color;
+                    color: white;
+                    font-family: "JostBold";
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-align: center;
+                }
+
+                .project__name {
+                    padding-top: 16px;
+                    width: 419px;
+                    height: 74px;
+                    color: white;
+                    font-family: "JostBold";
+                    font-size: 32px;
+                    line-height: 42px;
+                    background-color: black;
+                    text-align: center;
+                }
             }
         }
     }
