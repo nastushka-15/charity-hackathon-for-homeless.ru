@@ -16,6 +16,149 @@ body {
     font-family: "Barlow";
 }
 
+// banner section Женя
+.banner {
+    position: relative;
+    background: url('../images/crane.jpg'), linear-gradient(180deg, rgba(14, 14, 14, 0.3) 0%, rgba(14, 14, 14, 0.7) 100%);
+    background-size: 200% auto;
+    background-position: center;
+    background-blend-mode: darken;
+
+    @media (max-width: 768px) {
+        padding-bottom: 40px;
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .banner-container {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90%;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .banner__info {
+            margin: 199px 0;
+            max-width: 901px;
+            color: white;
+
+            @media (max-width: 768px) {
+                margin: 2rem 0;
+            }
+
+            .banner__info--title {
+                margin-bottom: 0;
+                font-family: "JostBold";
+                font-size: clamp(70px, 10vw, 158px);
+                line-height: 87%;
+                text-transform: capitalize
+            }
+
+            .banner__info--text {
+                margin-bottom: 49px;
+                max-width: 756px;
+                font-size: clamp(20px, 2.5vw, 24px);
+                line-height: 142%;
+            }
+
+            .banner__info--button {
+                @include button(192px);
+
+                .button__image {
+                    width: 22px;
+                    height: 100%;
+                }
+            }
+        }
+
+        .banner__image {
+            max-width: 606px;
+            background-image: url('../images/banner-bg.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right 0 bottom 0;
+
+            .banner__image--pic {
+                width: 100%;
+            }
+        }
+    }
+
+    .banner__machine {
+        position: absolute;
+        left: 35%;
+        bottom: -17%;
+        width: min(539px, 40vw);
+
+        .banner__machine--pic {
+            max-width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .banner__hook {
+        position: absolute;
+        left: 69px;
+        bottom: -240px;
+        z-index: -1;
+        animation: bounceDown 3s ease;
+
+        @keyframes bounceDown {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(-2px);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    }
+}
+
+.autoShow {
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 10%);
+}
+
+@keyframes autoShowAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+
+
+// banner section END
+
+
+// Our Projects Женя
+
+
+// Our Projects END
 // header start
 .header-container {
     width: 100%;
@@ -27,7 +170,7 @@ body {
     width: 100%;
     height: 145px;
     background: #000;
-    display:grid;
+    display: grid;
     grid-template-columns: 25% 75%;
 }
 
@@ -42,6 +185,7 @@ body {
     justify-content: flex-end;
     width: 100%;
 }
+
 .header_main-menu {
     width: 100%;
     height: 145px;
@@ -50,44 +194,50 @@ body {
     color: white;
 }
 
-.header__main-menu_contacts, .header__main-menu_contacts-wrap{
-width: 100%;
-height: 35%;
-font-weight: 400;
-font-size: 14px;
-line-height: 171%;
-text-transform: capitalize;
-color: var(#cdcdcd);
-font-family: "Barlow", sans-serif;
-align-items: center;
-display: flex;
-justify-content: space-around;
+.header__main-menu_contacts,
+.header__main-menu_contacts-wrap {
+    width: 100%;
+    height: 35%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-transform: capitalize;
+    color: var(#cdcdcd);
+    font-family: "Barlow", sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
 }
 
-.header__main-menu_icons-wrap{
+.header__main-menu_icons-wrap {
     display: flex;
     gap: 8px;
     justify-content: space-around;
     padding-right: 16px;
     padding-left: 16px;
 }
-.header-menu__adress, .header-menu__mail, .header-menu__time{
+
+.header-menu__adress,
+.header-menu__mail,
+.header-menu__time {
     display: flex;
     gap: 8px;
     align-items: center;
     text-decoration: none;
 }
 
-.header__gmail-link, .header-adress {
+.header__gmail-link,
+.header-adress {
     text-decoration: none;
-    color:#cdcdcd;
+    color: #cdcdcd;
 }
 
 .header__gmail-link:visited {
     color: #cdcdcd;
 }
+
 .header-menu__hover:hover {
-color: #FB5B11;
+    color: #FB5B11;
 }
 
 .header__main-menu_nav-bar {
@@ -137,6 +287,7 @@ color: #FB5B11;
     align-items: center;
     gap: 16px;
 }
+
 .header-btn {
     @include button(60px);
 }
