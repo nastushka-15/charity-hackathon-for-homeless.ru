@@ -20,20 +20,21 @@ body {
 
 
 // How to Process start
-.process{
+.process {
     background-image: url(./../images/right-screen.svg);
     background-repeat: no-repeat;
     background-position: top right;
-    margin-top: 142px ;
-    
+    margin-top: 142px;
+
 }
+
 .process_wrapper {
     max-width: 1296px;
     margin: 0 auto;
-    text-align: center; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .process_subheading {
         margin: 0 auto;
@@ -41,17 +42,17 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 13px; 
+        gap: 13px;
         font-family: "JostBold";
         font-weight: 600;
         font-size: 16px;
         line-height: 162%;
         margin-bottom: 15px;
     }
-    
-    .process_heading{   
+
+    .process_heading {
         margin-bottom: 37px;
-        font-family: "JostBold"; 
+        font-family: "JostBold";
         font-weight: 600;
         font-size: 52px;
         line-height: 119%;
@@ -72,8 +73,8 @@ body {
     width: 416px;
     height: 80px;
     position: relative;
-    background-color: #fff; 
-    font-family: "JostBold"; 
+    background-color: #fff;
+    font-family: "JostBold";
     font-weight: 600;
     font-size: 24px;
     line-height: 142%;
@@ -81,18 +82,18 @@ body {
 }
 
 .process_buttonlist__item.active {
-    background-color: $accent-color; 
+    background-color: $accent-color;
 }
 
 .process_buttonlist__item.active::after {
     content: "";
     position: absolute;
-    bottom: -10px; 
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
     border-style: solid;
     border-width: 10px 10px 0 10px;
-    border-color: $accent-color transparent transparent transparent; 
+    border-color: $accent-color transparent transparent transparent;
     width: 0;
     height: 0;
 }
@@ -107,22 +108,23 @@ body {
 // How to Process end
 
 // Price Table start
-.price{
+.price {
     max-height: 1084px;
     background-image: url(./../images/pricebg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 142px ;
+    margin-top: 142px;
 }
-.price_wrapper{
+
+.price_wrapper {
     max-width: 1296px;
     height: 100%;
     margin: 0 auto;
-    text-align: center; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
     .price_subheading {
         margin: 0 auto;
@@ -130,7 +132,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 13px; 
+        gap: 13px;
         font-family: "JostBold";
         font-weight: 600;
         font-size: 16px;
@@ -138,10 +140,10 @@ body {
         margin-bottom: 14px;
         margin-top: 143px;
     }
-    
-    .price_heading{   
+
+    .price_heading {
         margin-bottom: 37px;
-        font-family: "JostBold"; 
+        font-family: "JostBold";
         font-weight: 600;
         font-size: 52px;
         line-height: 119%;
@@ -151,12 +153,13 @@ body {
 }
 
 
-.price_cards{
+.price_cards {
     display: flex;
     gap: 24px;
 
 }
-.price_cards__item{
+
+.price_cards__item {
     width: 416px;
     height: 536px;
     border: 1px solid #d8d8d8;
@@ -176,17 +179,18 @@ body {
         height: 0;
         border-style: solid;
         border-width: 50px 50px 50px 0;
-        border-color: #000  transparent   transparent transparent;
-    }
-    &:hover::before {
-        border-color: $accent-color transparent transparent transparent; 
+        border-color: #000 transparent transparent transparent;
     }
 
-    .price_cards__item--special{
+    &:hover::before {
+        border-color: $accent-color transparent transparent transparent;
+    }
+
+    .price_cards__item--special {
         width: 100px;
         height: 30px;
-        margin: 10px 10px 0 0 ;
-        border-radius: 100px; 
+        margin: 10px 10px 0 0;
+        border-radius: 100px;
         background-color: #39ca6e;
         color: white;
         font-weight: 400;
@@ -200,21 +204,25 @@ body {
 
 
     }
-    .price_card__heading{
-        margin: 44px 0 27px 48px ;
+
+    .price_card__heading {
+        margin: 44px 0 27px 48px;
         display: flex;
         flex-direction: column;
         gap: 13px;
-        .price_card__heading--value{
-            font-family: "JostBold"; 
+
+        .price_card__heading--value {
+            font-family: "JostBold";
             font-weight: 600;
             font-size: 32px;
             line-height: 131%;
-                sub{
-                    color: $gray-text;
-                }
+
+            sub {
+                color: $gray-text;
+            }
         }
-        div{
+
+        div {
             display: flex;
             align-items: center;
             gap: 16px;
@@ -226,7 +234,7 @@ body {
 
     .price_card__list {
         margin: 0 0 39px 38px;
-        
+
         ul {
             border-top: 1px solid $gray-text;
             padding-top: 19px;
@@ -240,16 +248,16 @@ body {
             font-weight: 400;
             font-size: 16px;
             line-height: 225%;
-            margin-left: 20px; 
+            margin-left: 20px;
         }
 
         li::before {
-            content: "";  
-            display: inline-block; 
-            width: 2px; 
-            height: 2px; 
-            background-color: $gray-text; 
-            margin-right: 10px; 
+            content: "";
+            display: inline-block;
+            width: 2px;
+            height: 2px;
+            background-color: $gray-text;
+            margin-right: 10px;
         }
     }
 
@@ -272,35 +280,35 @@ body {
         box-shadow: 0 0 10px #555555;
         cursor: pointer;
 
-            &:hover {
+        &:hover {
 
             background-color: $accent-color;
             color: white;
             text-decoration: none;
 
         }
-    
+
         &:active {
             transform: scale(0.99);
         }
     }
 
     .price_card__button span {
-        margin-right: 10px; 
-    }
-    
-    .price_card__button img {
-        display: block;
-        width: 17px; 
-        height: 17px; 
-    }
-    
-    .price_card__button:hover img {
-        content: url(../images/arrow-top.svg);
-        
+        margin-right: 10px;
     }
 
+    .price_card__button img {
+        display: block;
+        width: 17px;
+        height: 17px;
     }
+
+    .price_card__button:hover img {
+        content: url(../images/arrow-top.svg);
+
+    }
+
+}
 
 // Price Table End
 
@@ -309,15 +317,13 @@ body {
 .banner {
     position: relative;
     background: url('../images/crane.jpg'), linear-gradient(180deg, rgba(14, 14, 14, 0.3) 0%, rgba(14, 14, 14, 0.7) 100%);
-    background-size: auto;
-    background-position: center;
+    background-size: auto 100%;
+    background-position: top;
     background-blend-mode: darken;
     background-repeat: no-repeat;
 
     @media (max-width: 768px) {
         padding-bottom: 40px;
-        background-size: auto 100%;
-        background-position: center;
     }
 
     .banner-container {
@@ -383,6 +389,7 @@ body {
         left: 35%;
         bottom: -17%;
         width: min(539px, 40vw);
+        background: none;
 
         .banner__machine--pic {
             max-width: 100%;
@@ -447,13 +454,26 @@ body {
 
 // Our Projects Женя
 .projects {
-    background: none;
+    background: white;
     margin-top: 300px;
 
     .projects__subheading,
     .projects__heading {
         margin-left: 312px;
     }
+
+    .projects__subheading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        font-family: "JostBold";
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 162%;
+        margin-bottom: 15px;
+    }
+
 
     .projects__swiper-wrapper {
         width: 100%;

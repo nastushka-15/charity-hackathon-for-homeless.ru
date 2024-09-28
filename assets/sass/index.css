@@ -281,16 +281,14 @@ body {
 .banner {
   position: relative;
   background: url("../images/crane.jpg"), linear-gradient(180deg, rgba(14, 14, 14, 0.3) 0%, rgba(14, 14, 14, 0.7) 100%);
-  background-size: auto;
-  background-position: center;
+  background-size: auto 100%;
+  background-position: top;
   background-blend-mode: darken;
   background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
   .banner {
     padding-bottom: 40px;
-    background-size: auto 100%;
-    background-position: center;
   }
 }
 .banner .banner-container {
@@ -372,6 +370,7 @@ body {
   left: 35%;
   bottom: -17%;
   width: min(539px, 40vw);
+  background: none;
 }
 .banner .banner__machine .banner__machine--pic {
   max-width: 100%;
@@ -417,12 +416,23 @@ body {
   }
 }
 .projects {
-  background: none;
+  background: white;
   margin-top: 300px;
 }
 .projects .projects__subheading,
 .projects .projects__heading {
   margin-left: 312px;
+}
+.projects .projects__subheading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  font-family: "JostBold";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 162%;
+  margin-bottom: 15px;
 }
 .projects .projects__swiper-wrapper {
   width: 100%;
