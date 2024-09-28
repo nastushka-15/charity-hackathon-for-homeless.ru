@@ -410,12 +410,14 @@ body {
         animation-timeline: view();
 
         @keyframes bounceDown {
-            from {
+
+            0%,
+            100% {
                 transform: translateY(-2px);
             }
 
-            to {
-                transform: translateY(-20px);
+            50% {
+                transform: translateY(-40px);
             }
         }
     }
@@ -446,35 +448,103 @@ body {
 
 // Our Projects Женя
 .projects {
-    margin-top: 300px;
+    margin-top: 250px;
+    overflow: hidden;
 
-    .projects__subheading,
-    .projects__heading {
-        margin-left: 312px;
+    .projects__swiper {
+        max-width: 1920px;
+
+        @media (max-width: 768px) {
+            max-width: 100vw;
+        }
     }
 
     .projects__subheading {
+        margin: 0 auto;
+        max-width: 1296px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 13px;
         font-family: "JostBold";
-        font-weight: 600;
         font-size: 16px;
         line-height: 162%;
         margin-bottom: 15px;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
     }
 
+    .swiper-header {
+        margin: 0 auto 67px auto;
+        max-width: 1296px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .projects__heading {
+            font-family: "JostBold";
+            font-size: 52px;
+            line-height: 119%;
+
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+        }
+
+        .swiper-controls {
+            display: flex;
+            align-items: center;
+
+            .projects__swiper-button-prev,
+            .projects__swiper-button-next {
+                position: static;
+                margin: 0;
+                padding: 0;
+                color: $gray-text;
+
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+
+            .projects__swiper-button-next::after,
+            .projects__swiper-button-prev::after {
+                content: "";
+            }
+        }
+
+    }
 
     .projects__swiper-wrapper {
         width: 100%;
         height: 443px;
 
         .projects__swiper-slide {
-            height: 100%;
+            position: relative;
+            height: 443px;
+            width: 623px;
+            overflow: hidden;
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+            }
 
             img {
-                height: 443px;
+                height: 100%;
+            }
+
+            .project__info {
+                position: absolute;
+                left: 10px;
+                bottom: 10px;
+                // display: none;
             }
         }
     }
