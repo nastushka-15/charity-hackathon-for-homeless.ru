@@ -1,12 +1,15 @@
-@import "./_fonts.css";
+@import "./_fonts";
+@import './vars';
 
 * {
     margin: 0;
     padding: 0;
 }
+
 html {
     box-sizing: border-box;
 }
+
 body {
     max-width: 1920px;
     margin: 0 auto;
