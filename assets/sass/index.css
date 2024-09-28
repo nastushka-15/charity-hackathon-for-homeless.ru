@@ -26,4 +26,89 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   font-family: "Barlow";
+}
+
+.banner {
+  padding-top: 49px;
+  padding-bottom: 72px;
+  position: relative;
+  display: flex;
+  gap: 54px;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/crane.jpg"), linear-gradient(180deg, rgba(14, 14, 14, 0.3) 0%, rgba(14, 14, 14, 0.7) 100%);
+  background-size: 100%;
+  background-blend-mode: darken;
+}
+.banner .banner__info {
+  max-width: 901px;
+  color: white;
+}
+.banner .banner__info .banner__info--title {
+  margin-bottom: 0;
+  font-family: "JostBold";
+  font-size: 158px;
+  line-height: 87%;
+  text-transform: capitalize;
+}
+.banner .banner__info .banner__info--text {
+  margin-bottom: 49px;
+  max-width: 756px;
+  font-size: 24px;
+  line-height: 142%;
+}
+.banner .banner__info .banner__info--button {
+  height: 60px;
+  width: 192px;
+  background-color: #fb5b11;
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-family: "JostBold";
+  font-size: 16px;
+  line-height: 26px;
+}
+.banner .banner__info .banner__info--button .button__image {
+  width: 22px;
+  height: 100%;
+}
+.banner .banner__image {
+  max-width: 606px;
+  background-image: url("../images/banner-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 0 bottom 0;
+}
+.banner .banner__image .banner__image--pic {
+  max-width: 100%;
+}
+.banner .banner__machine {
+  position: absolute;
+  left: 35%;
+  bottom: -157px;
+  max-width: 539px;
+}
+.banner .banner__hook {
+  position: absolute;
+  left: 69px;
+  bottom: -240.5px;
+  z-index: -1;
+}
+
+.autoShow {
+  animation: autoShowAnimation both;
+  animation-timeline: view(80% 10%);
+}
+
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }/*# sourceMappingURL=index.css.map */
