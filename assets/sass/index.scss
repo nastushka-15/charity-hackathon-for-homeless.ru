@@ -159,3 +159,137 @@ body {
 
 
 // Our Projects END
+// header start
+.header-container {
+    width: 100%;
+    height: 156px;
+    display: flex;
+}
+
+.header-inner-container {
+    width: 100%;
+    height: 145px;
+    background: #000;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.header-logo {
+    grid-column: 1;
+}
+
+.header__menu-container {
+    grid-column: 2;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.header_main-menu {
+    width: 100%;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.header__main-menu_contacts,
+.header__main-menu_contacts-wrap {
+    width: 100%;
+    height: 35%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-transform: capitalize;
+    color: var(#cdcdcd);
+    font-family: "Barlow", sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__main-menu_icons-wrap {
+    display: flex;
+    gap: 8px;
+    justify-content: space-around;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.header-menu__adress,
+.header-menu__mail,
+.header-menu__time {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header__gmail-link,
+.header-adress {
+    text-decoration: none;
+    color: #cdcdcd;
+}
+
+.header__gmail-link:visited {
+    color: #cdcdcd;
+}
+
+.header-menu__hover:hover {
+    color: #FB5B11;
+}
+
+.header__main-menu_nav-bar {
+    align-self: flex-end;
+    border-top: 1px solid #cdcdcd;
+    width: 92%;
+    height: 100%;
+    display: flex;
+    gap: 1%;
+    justify-content: space-around;
+    color: var(#cdcdcd);
+    font-family: "Barlow", sans-serif;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 162%;
+    text-transform: capitalize;
+    color: white;
+}
+
+.header-nav-bar__link {
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 162%;
+    text-transform: capitalize;
+    color: white;
+}
+
+.header-nav-bar__link:visited {
+    color: white;
+}
+
+.header-nav-bar__link:hover {
+    color: #FB5B11;
+}
+
+.header_side-bar {
+    border-left: 1px solid #cdcdcd;
+    width: 20%;
+    height: 145px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-btn {
+    @include button(60px);
+}
+
+// header end

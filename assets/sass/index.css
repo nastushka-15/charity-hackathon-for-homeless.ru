@@ -3,16 +3,19 @@
   font-weight: 400;
   src: url(./../fonts/Barlow-Regular.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "Jost";
   font-weight: 400;
   src: url(./../fonts/Jost-VariableFont_wght.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "JostBold";
   font-weight: 600;
   src: url(./../fonts/Jost-SemiBold.ttf) format("truetype");
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +38,7 @@ body {
   background-position: center;
   background-blend-mode: darken;
 }
+
 @media (max-width: 768px) {
   .banner {
     padding-bottom: 40px;
@@ -43,6 +47,7 @@ body {
     background-repeat: no-repeat;
   }
 }
+
 .banner .banner-container {
   margin: 0 auto;
   display: flex;
@@ -50,21 +55,25 @@ body {
   align-items: center;
   max-width: 90%;
 }
+
 @media (max-width: 768px) {
   .banner .banner-container {
     flex-direction: column;
   }
 }
+
 .banner .banner-container .banner__info {
   margin: 199px 0;
   max-width: 901px;
   color: white;
 }
+
 @media (max-width: 768px) {
   .banner .banner-container .banner__info {
     margin: 2rem 0;
   }
 }
+
 .banner .banner-container .banner__info .banner__info--title {
   margin-bottom: 0;
   font-family: "JostBold";
@@ -72,96 +81,255 @@ body {
   line-height: 87%;
   text-transform: capitalize;
 }
+
 .banner .banner-container .banner__info .banner__info--text {
   margin-bottom: 49px;
   max-width: 756px;
   font-size: clamp(20px, 2.5vw, 24px);
   line-height: 142%;
 }
+
 .banner .banner-container .banner__info .banner__info--button {
   height: 60px;
   width: 192px;
-  background-image: linear-gradient(to right, #fb5b11 0%, #f17e49 51%, #fb5b11 100%);
-  color: white;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  font-family: "JostBold";
-  font-size: 16px;
-  line-height: 26px;
-  transition: 0.5s;
-  background-size: 200% auto;
-  box-shadow: 0 0 10px #555555;
-  cursor: pointer;
-}
-.banner .banner-container .banner__info .banner__info--button:hover {
-  background-position: right center;
-  color: #fff;
-  text-decoration: none;
-}
-.banner .banner-container .banner__info .banner__info--button:active {
-  transform: scale(0.99);
-}
-.banner .banner-container .banner__info .banner__info--button .button__image {
-  width: 22px;
-  height: 100%;
-}
-.banner .banner-container .banner__image {
-  max-width: 606px;
-  background-image: url("../images/banner-bg.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right 0 bottom 0;
-}
-.banner .banner-container .banner__image .banner__image--pic {
-  width: 100%;
-}
-.banner .banner__machine {
-  position: absolute;
-  left: 35%;
-  bottom: -17%;
-  width: min(539px, 40vw);
-}
-.banner .banner__machine .banner__machine--pic {
-  max-width: 100%;
-}
-@media (max-width: 768px) {
-  .banner .banner__machine {
-    display: none;
-  }
-}
-.banner .banner__hook {
-  position: absolute;
-  left: 69px;
-  bottom: -240px;
-  z-index: -1;
-  animation: bounceDown 3s ease;
-}
-@keyframes bounceDown {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(-2px);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
 
-.autoShow {
-  animation: autoShowAnimation both;
-  animation-timeline: view(70% 10%);
-}
+  .header-container {
+    width: 100%;
+    height: 156px;
+    display: flex;
+  }
 
-@keyframes autoShowAnimation {
-  from {
-    opacity: 0;
-    transform: translateY(50px) scale(0.9);
+  .header-inner-container {
+    width: 100%;
+    height: 145px;
+    background: #000;
+    display: grid;
+    grid-template-columns: 25% 75%;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
+
+  .header-logo {
+    grid-column: 1;
   }
-}/*# sourceMappingURL=index.css.map */
+
+  .header__menu-container {
+    grid-column: 2;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .header_main-menu {
+    width: 100%;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .header__main-menu_contacts,
+  .header__main-menu_contacts-wrap {
+    width: 100%;
+    height: 35%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-transform: capitalize;
+    color: var(#cdcdcd);
+    font-family: "Barlow", sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header__main-menu_icons-wrap {
+    display: flex;
+    gap: 8px;
+    justify-content: space-around;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .header-menu__adress,
+  .header-menu__mail,
+  .header-menu__time {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .header__gmail-link,
+  .header-adress {
+    text-decoration: none;
+    color: #cdcdcd;
+  }
+
+  .header__gmail-link:visited {
+    color: #cdcdcd;
+  }
+
+  .header-menu__hover:hover {
+    color: #FB5B11;
+  }
+
+  .header__main-menu_nav-bar {
+    align-self: flex-end;
+    border-top: 1px solid #cdcdcd;
+    width: 92%;
+    height: 100%;
+    display: flex;
+    gap: 1%;
+    justify-content: space-around;
+    color: var(#cdcdcd);
+    font-family: "Barlow", sans-serif;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 162%;
+    text-transform: capitalize;
+    color: white;
+  }
+
+  .header-nav-bar__link {
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 162%;
+    text-transform: capitalize;
+    color: white;
+  }
+
+  .header-nav-bar__link:visited {
+    color: white;
+  }
+
+  .header-nav-bar__link:hover {
+    color: #FB5B11;
+  }
+
+  .header_side-bar {
+    border-left: 1px solid #cdcdcd;
+    width: 20%;
+    height: 145px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .header-btn {
+    height: 60px;
+    width: 60px;
+    background-image: linear-gradient(to right, #fb5b11 0%, #f17e49 51%, #fb5b11 100%);
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: "JostBold";
+    font-size: 16px;
+    line-height: 26px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 10px #555555;
+    cursor: pointer;
+  }
+
+  <<<<<<< HEAD .banner .banner-container .banner__info .banner__info--button:hover {
+    =======.header-btn:hover {
+      >>>>>>>dde752650e7eca1272b2a4c75ebae7aa9dab80e0 background-position: right center;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    <<<<<<< HEAD .banner .banner-container .banner__info .banner__info--button:active {
+      transform: scale(0.99);
+    }
+
+    .banner .banner-container .banner__info .banner__info--button .button__image {
+      width: 22px;
+      height: 100%;
+    }
+
+    .banner .banner-container .banner__image {
+      max-width: 606px;
+      background-image: url("../images/banner-bg.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right 0 bottom 0;
+    }
+
+    .banner .banner-container .banner__image .banner__image--pic {
+      width: 100%;
+    }
+
+    .banner .banner__machine {
+      position: absolute;
+      left: 35%;
+      bottom: -17%;
+      width: min(539px, 40vw);
+    }
+
+    .banner .banner__machine .banner__machine--pic {
+      max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .banner .banner__machine {
+        display: none;
+      }
+    }
+
+    .banner .banner__hook {
+      position: absolute;
+      left: 69px;
+      bottom: -240px;
+      z-index: -1;
+      animation: bounceDown 3s ease;
+    }
+
+    @keyframes bounceDown {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(-2px);
+      }
+
+      40% {
+        transform: translateY(-30px);
+      }
+
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+
+    .autoShow {
+      animation: autoShowAnimation both;
+      animation-timeline: view(70% 10%);
+    }
+
+    @keyframes autoShowAnimation {
+      from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+
+      =======.header-btn:active {
+        transform: scale(0.99);
+        >>>>>>>dde752650e7eca1272b2a4c75ebae7aa9dab80e0
+      }
+
+      /*# sourceMappingURL=index.css.map */
