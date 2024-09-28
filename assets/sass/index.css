@@ -524,9 +524,40 @@ body {
   bottom: 30px;
   display: none;
 }
+.projects .projects__swiper-wrapper .projects__swiper-slide .project__info .popover-button {
+  height: 60px;
+  width: 60px;
+  background-image: linear-gradient(to right, #fb5b11 0%, #f17e49 51%, #fb5b11 100%);
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-family: "JostBold";
+  font-size: 16px;
+  line-height: 26px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 10px #555555;
+  cursor: pointer;
+  margin: 0 auto;
+  border: 5px solid #555555;
+}
+.projects .projects__swiper-wrapper .projects__swiper-slide .project__info .popover-button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.projects .projects__swiper-wrapper .projects__swiper-slide .project__info .popover-button:active {
+  transform: scale(0.99);
+}
+.projects .projects__swiper-wrapper .projects__swiper-slide .project__info .popover-button:active {
+  transform: scale(0.95);
+}
 .projects .projects__swiper-wrapper .projects__swiper-slide .project__info .project__type {
+  margin-top: 40px;
   margin-bottom: 20px;
-  padding-top: 5px;
+  padding-top: 3px;
   width: 116px;
   height: 36px;
   background-color: #fb5b11;
@@ -537,15 +568,21 @@ body {
   text-align: center;
 }
 .projects .projects__swiper-wrapper .projects__swiper-slide .project__info .project__name {
-  padding-top: 16px;
+  padding-top: 13px;
   width: 419px;
   height: 74px;
   color: white;
   font-family: "JostBold";
   font-size: 32px;
-  line-height: 42px;
+  line-height: 40px;
   background-color: black;
   text-align: center;
+}
+.projects .projects__swiper-wrapper .projects__swiper-slide .project__popover:popover-open {
+  width: 500px;
+  height: 700px;
+  margin: 0 auto;
+  display: block;
 }
 
 .header-container {

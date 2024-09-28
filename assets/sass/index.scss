@@ -567,9 +567,20 @@ body {
                 bottom: 30px;
                 display: none;
 
+                .popover-button {
+                    @include button (60px);
+                    margin: 0 auto;
+                    border: 5px solid $gray-text;
+
+                    &:active {
+                        transform: scale(0.95);
+                    }
+                }
+
                 .project__type {
+                    margin-top: 40px;
                     margin-bottom: 20px;
-                    padding-top: 5px;
+                    padding-top: 3px;
                     width: 116px;
                     height: 36px;
                     background-color: $accent-color;
@@ -581,16 +592,23 @@ body {
                 }
 
                 .project__name {
-                    padding-top: 16px;
+                    padding-top: 13px;
                     width: 419px;
                     height: 74px;
                     color: white;
                     font-family: "JostBold";
                     font-size: 32px;
-                    line-height: 42px;
+                    line-height: 40px;
                     background-color: black;
                     text-align: center;
                 }
+            }
+
+            .project__popover:popover-open {
+                width: 500px;
+                height: 700px;
+                margin: 0 auto;
+                display: block;
             }
         }
     }
