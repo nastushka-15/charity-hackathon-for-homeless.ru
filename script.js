@@ -16,3 +16,39 @@ processButtons.forEach((button, index) => {
 });
 });
 
+//form validation
+
+const form = document.forms.loginForm;
+const emailInput = form.elements.email;
+const submitBtn = form.elements.submitBtn;
+const emailError = document.getElementById('emailError');
+const emailSuccess = document.getElementById('emailSuccess');
+form.addEventListener('submit', function(evt) {
+    evt.preventDefault();
+    let hasError = false;
+    
+    // Очистка предыдущих сообщений об ошибках
+    emailError.style.display = 'none';
+    emailSuccess.style.display ='none';
+
+    if (validateEmail(emailInput.value) === false) {
+        emailError.textContent = 'Введите корректный email.';
+        emailError.style.display = 'block';
+        hasError = true;
+        }
+    
+
+    if (hasError === false) {
+        console.log('Форма успешно отправлена!');
+        emailSuccess.textContent = 'Форма успешно отправлена!';
+        emailSuccess.style.display = 'block';
+        form.reset();
+        }
+    });  
+
+    function validateEmail(email) {
+    let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+$/;
+    return regex.test(email);
+    }
+
+

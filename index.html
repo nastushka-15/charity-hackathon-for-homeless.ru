@@ -272,7 +272,20 @@
 
     </main>
     <footer class="footer" id="contact">
-        <form class="sign-up_form"></form>
+        <form name="loginForm" class="sign-up_form">
+            <div class="sign-up_form-text">
+                <p class="form-text">Sign up for our newsletter</p>
+                <p class="form-text">to get weekly updates.</p>
+            </div>
+            <div class="sign-up_form-input-box">
+                <div class="input-box__wrap">
+                    <input type="email" class="form__input footer-text" name="email" placeholder="Inter Your Email">
+                    <button class="form-button" name="submitBtn"><img  src="./assets/images/form-button.svg" alt="form-button"></button>
+                </div>
+                <span class="footer-title" id="emailSuccess"></span>
+                <span class="error footer-title" id="emailError"></span>
+            </div>
+        </form>
         <div class="footer-container">
             <div class="footer_inner-container">
                 <div class="footer__logo-box">
