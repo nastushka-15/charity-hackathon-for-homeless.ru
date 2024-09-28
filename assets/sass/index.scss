@@ -605,10 +605,52 @@ body {
             }
 
             .project__popover:popover-open {
-                width: 500px;
-                height: 700px;
-                margin: 0 auto;
+                margin: auto;
+                padding: 1rem;
+                width: 1000px;
+                height: 500px;
+                border: none;
                 display: block;
+                transition: .4s ease;
+            }
+
+            .popover__info {
+                margin: auto;
+                padding: 1rem;
+                background-color: rgba(255, 255, 255, 0.6);
+                border-radius: 10px;
+            }
+
+            .popover__title {
+                font-family: "JostBold";
+                font-size: 32px;
+                line-height: 40px;
+                text-align: center;
+            }
+
+            #project1-popover {
+                background-image: url('/assets/images/project1.webp');
+                background-size: cover;
+            }
+
+            #project2-popover {
+                background-image: url('/assets/images/project2.webp');
+                background-size: cover;
+            }
+
+            #project3-popover {
+                background-image: url('/assets/images/project3.webp');
+                background-size: cover;
+            }
+
+            #project4-popover {
+                background-image: url('/assets/images/project4.webp');
+                background-size: cover;
+            }
+
+            #project5-popover {
+                background-image: url('/assets/images/project5.webp');
+                background-size: cover;
             }
         }
     }
