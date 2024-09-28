@@ -22,12 +22,15 @@ body {
     padding-bottom: 72px;
     position: relative;
     display: flex;
-    gap: 54px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background: url('../images/crane.jpg'), linear-gradient(180deg, rgba(14, 14, 14, 0.3) 0%, rgba(14, 14, 14, 0.7) 100%);
     background-size: 100%;
     background-blend-mode: darken;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 
     .banner__info {
         max-width: 901px;
@@ -36,7 +39,7 @@ body {
         .banner__info--title {
             margin-bottom: 0;
             font-family: "JostBold";
-            font-size: 158px;
+            font-size: clamp(60px, 10vw, 158px);
             line-height: 87%;
             text-transform: capitalize
         }
@@ -44,19 +47,12 @@ body {
         .banner__info--text {
             margin-bottom: 49px;
             max-width: 756px;
-            font-size: 24px;
+            font-size: clamp(16px, 2.5vw, 24px);
             line-height: 142%;
         }
 
         .banner__info--button {
             @include button(192px);
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            justify-content: center;
-            font-family: "JostBold";
-            font-size: 16px;
-            line-height: 26px;
 
             .button__image {
                 width: 22px;
@@ -82,19 +78,43 @@ body {
         left: 35%;
         bottom: -157px;
         max-width: 539px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     .banner__hook {
         position: absolute;
         left: 69px;
-        bottom: -240.5px;
+        bottom: -240px;
         z-index: -1;
+        animation: bounceDown 3s ease;
+
+        @keyframes bounceDown {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(-2px);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
+        }
     }
 }
 
 .autoShow {
     animation: autoShowAnimation both;
-    animation-timeline: view(80% 10%);
+    animation-timeline: view(70% 10%);
 }
 
 @keyframes autoShowAnimation {
@@ -108,5 +128,8 @@ body {
         transform: translateY(0) scale(1);
     }
 }
+
+
+
 
 // banner section END
