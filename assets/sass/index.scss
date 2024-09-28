@@ -105,3 +105,110 @@ body {
 
 
 // How to Process end
+
+// Price Table start
+.price{
+    max-height: 1084px;
+    background-image: url(./../images/pricebg.png);
+    background-repeat: no-repeat;
+
+    margin-top: 142px ;
+}
+.price_wrapper{
+    max-width: 1296px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+
+    .price_subheading {
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px; 
+        font-family: "JostBold";
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 162%;
+        margin-bottom: 14px;
+        margin-top: 143px;
+    }
+    
+    .price_heading{   
+        margin-bottom: 37px;
+        font-family: "JostBold"; 
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 119%;
+        margin-bottom: 167px;
+
+    }
+}
+
+.price_cards__item{
+    width: 416px;
+    height: 536px;
+    border: 1px solid #d8d8d8;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+
+    .price_card__heading{
+        margin: 44px 0 27px 48px ;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        .price_card__heading--value{
+            font-family: "JostBold"; 
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 131%;
+                sub{
+                    color: $gray-text;
+                }
+        }
+        div{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+        }
+    }
+
+    .price_card__list {
+        margin: 0 0 39px 38px;
+        
+        ul {
+            border-top: 1px solid $gray-text;
+            padding-top: 19px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        li {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 225%;
+            margin-left: 20px; 
+        }
+
+        li::before {
+            content: "";  
+            display: inline-block; 
+            width: 2px; 
+            height: 2px; 
+            background-color: $gray-text; 
+            margin-right: 10px; 
+        }
+    }
+}
+// Price Table End
