@@ -31,7 +31,7 @@ body {
 .banner {
   position: relative;
   background: url("../images/crane.jpg"), linear-gradient(180deg, rgba(14, 14, 14, 0.3) 0%, rgba(14, 14, 14, 0.7) 100%);
-  background-size: 200% auto;
+  background-size: auto;
   background-position: center;
   background-blend-mode: darken;
   background-repeat: no-repeat;
@@ -137,6 +137,7 @@ body {
   bottom: -240px;
   z-index: -1;
   animation: bounceDown 3s ease;
+  animation-timeline: view(70% 10%);
 }
 @keyframes bounceDown {
   0%, 20%, 50%, 80%, 100% {
@@ -164,6 +165,10 @@ body {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
+}
+.projects {
+  background: none;
+  margin-top: 300px;
 }
 .projects .projects__subheading,
 .projects .projects__heading {

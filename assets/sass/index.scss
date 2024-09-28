@@ -20,7 +20,7 @@ body {
 .banner {
     position: relative;
     background: url('../images/crane.jpg'), linear-gradient(180deg, rgba(14, 14, 14, 0.3) 0%, rgba(14, 14, 14, 0.7) 100%);
-    background-size: 200% auto;
+    background-size: auto;
     background-position: center;
     background-blend-mode: darken;
     background-repeat: no-repeat;
@@ -110,6 +110,7 @@ body {
         bottom: -240px;
         z-index: -1;
         animation: bounceDown 3s ease;
+        animation-timeline: view(70% 10%);
 
         @keyframes bounceDown {
 
@@ -157,6 +158,8 @@ body {
 
 // Our Projects Женя
 .projects {
+    background: none;
+    margin-top: 300px;
 
     .projects__subheading,
     .projects__heading {
