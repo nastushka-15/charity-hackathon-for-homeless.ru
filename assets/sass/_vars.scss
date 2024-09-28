@@ -1,0 +1,9 @@
+$accent-color: #fb5b11;
+$gray-text: #555555;
+
+@mixin button ($width) {
+    height: 60px;
+    width: $width;
+    background-color: $accent-color;
+    color: white;
+}

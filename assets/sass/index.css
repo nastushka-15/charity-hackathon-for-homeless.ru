@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Barlow";
+  font-weight: 400;
+  src: url(./../fonts/Barlow-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Jost";
+  font-weight: 400;
+  src: url(./../fonts/Jost-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: "JostBold";
+  font-weight: 600;
+  src: url(./../fonts/Jost-SemiBold.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "Barlow";
+}/*# sourceMappingURL=index.css.map */
