@@ -1,12 +1,9 @@
-import Swiper from "swiper";
-import './node_modules/swiper/swiper-bundle.min.css'
-
-const swiper = new Swiper('.projects__swiper', {
+const swiper = new Swiper('.mySwiper', {
     spaceBetween: 30,
 
     navigation: {
-        nextEl: '.projects__swiper-button-next',
-        prevEl: '.projects__swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 
     breakpoints: {

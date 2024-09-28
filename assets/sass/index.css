@@ -165,14 +165,18 @@ body {
     transform: translateY(0) scale(1);
   }
 }
-.projects__swiper-wrapper {
+.projects .projects__subheading,
+.projects .projects__heading {
+  margin-left: 312px;
+}
+.projects .projects__swiper-wrapper {
   width: 100%;
   height: 443px;
 }
-.projects__swiper-wrapper .projects__swiper-slide {
+.projects .projects__swiper-wrapper .projects__swiper-slide {
   height: 100%;
 }
-.projects__swiper-wrapper .projects__swiper-slide img {
+.projects .projects__swiper-wrapper .projects__swiper-slide img {
   height: 443px;
 }
 
