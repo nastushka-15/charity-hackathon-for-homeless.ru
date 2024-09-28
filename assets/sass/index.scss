@@ -295,16 +295,19 @@ body {
 
 // header end
 
+// About us start
+
 .about-us {
-  padding-top: 143px;
+  padding-top: 300px;
 }
 
-.about-us__container {
+.about-us__container-main {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 212px;
 }
 .about-us__content {
-  //   display: flex;
   display: flex;
-  //   align-content: stretch;
 }
 
 .about-us__title {
@@ -322,8 +325,8 @@ body {
 }
 
 .about-us__details {
-  display: flex;
   flex-direction: column;
+  padding-top: 40px;
 }
 
 .about-us__text {
@@ -334,6 +337,7 @@ body {
 
 .about-us__details-section {
   display: flex;
+  margin-top: 24px;
 }
 
 .about-us__btn {
@@ -349,16 +353,15 @@ body {
   margin-top: 8px;
 }
 
-.about-us__right-img {
-}
+// About us End
 
-// .about-us__right-img {
-//   justify-content: flex-end;
+/* swiper */
+
+// .about-us__swiper {
+
 // }
 
-// Swiper
-
-// .about-us__card-wrapper {
+// .card-wrapper {
 //   max-width: 1100px;
 //   margin: 0 60px 35px;
 //   padding: 20px 10px;
@@ -374,7 +377,8 @@ body {
 //   user-select: none;
 //   border-radius: 12px;
 //   text-decoration: none;
-//   //   border: 2px solid transparent;
+//   border: 2px solid transparent;
+//   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
 //   transition: 0.2s ease;
 // }
 // .card-list .card-item .card-link:active {
@@ -389,7 +393,7 @@ body {
 //   aspect-ratio: 16 / 9;
 //   object-fit: cover;
 // }
-// .card-list .card-link .card-text {
+// .card-list .card-link .badge {
 //   color: #5372f0;
 //   width: fit-content;
 //   padding: 8px 16px;
@@ -399,19 +403,19 @@ body {
 //   background: #dde4ff;
 //   margin: 16px 0 18px;
 // }
-// .card-list .card-link {
+// .card-list .card-link .badge-designer {
 //   color: #b22485;
 //   background: #f7dff5;
 // }
-// .card-list .card-link {
+// .card-list .card-link .badge-marketer {
 //   color: #b25a2b;
 //   background: #ffe3d2;
 // }
-// .card-list .card-link {
+// .card-list .card-link .badge-gamer {
 //   color: #205c20;
 //   background: #d6f8d6;
 // }
-// .card-list .card-link {
+// .card-list .card-link .badge-editor {
 //   color: #856404;
 //   background: #fff3cd;
 // }

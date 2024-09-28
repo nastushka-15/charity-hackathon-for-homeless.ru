@@ -1,5 +1,3 @@
-// // swiper
-
 // new Swiper('.card-wrapper', {
 //     loop: true,
 //     spaceBetween: 30,
