@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/sass/index.css" />
     <title>test3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -39,8 +40,7 @@
                 <p>In today's world, we're bombarded with choices. From streaming
                     services to meal kits, it can be overwhelming.</p>
                 <button class="about-us__button">Read more</button>
-                <p>25+ Experience
-                    25+ Experience</p>
+                <p>25+ Experience</p>
             </div>
             <!-- Swiper -->
             <div class="about-us__card-wrapper">
@@ -49,7 +49,7 @@
                     <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
                             <img src="./assets/images/constructor-1.jpg" alt="Card Image" class="card-image">
-                            <p class="badge badge-designer">Our Vision</p>
+                            <p class="card-text">Our Vision</p>
                             <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
 
                         </a>
@@ -90,6 +90,10 @@
                 <div class="swiper-slide-button swiper-button-next"></div>
 
             </div>
+
+            <div class="about-us__right-img">
+                <img src="./assets/images/right-screen.svg" alt="img">
+            </div>
         </section>
         <!-- About Us End-->
 
@@ -97,7 +101,19 @@
 
 
         <!-- Our Compony status Вика -->
+        <section class="our-company">
+            <div class="our-company__content">
+                <img src="./assets/images/left-screen.svg" alt="img">
+                <img src="./assets/images/Line.svg" alt="img">
+                <h5>Our Company Status</h5>
+                <h3>Trusted & Reliable</h3>
 
+            </div>
+
+            <div class="">
+                <!-- Добавить контент -->
+            </div>
+        </section>
         <!-- Our Compony status End -->
 
 
@@ -149,7 +165,8 @@
 
     </main>
     <footer></footer>
-
+    <!-- Linking SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 
