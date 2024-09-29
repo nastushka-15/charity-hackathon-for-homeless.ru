@@ -16,3 +16,33 @@ processButtons.forEach((button, index) => {
 });
 });
 
+
+
+// анимация цифр блок Our-company
+
+const counters = document.querySelectorAll('.our-company__number');
+counters.forEach(counter => {
+  let numberTop = counter.getBoundingClientRect().top,
+  start = +counter.innerHTML,
+  end = +counter.dataset.max;
+
+  let animated = false;
+  
+  window.addEventListener('scroll', function onScroll() {
+    if (!animated && window.pageYOffset > numberTop - window.innerHeight / 2) {
+      animated = true;
+      window.removeEventListener('scroll', onScroll);
+      let interval = setInterval(function() {
+        counter.innerHTML = ++start;
+        if (start === end) {
+          clearInterval(interval);
+        }
+      }, 5);
+    }
+  });
+});
+
+
+
+
+
