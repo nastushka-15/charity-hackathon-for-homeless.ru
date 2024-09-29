@@ -429,6 +429,209 @@ body {
 // banner section END
 
 // Our Projects Женя
+.projects {
+  margin-top: 250px;
+  overflow: hidden;
+
+  .projects__swiper {
+    max-width: 1920px;
+
+    @media (max-width: 768px) {
+      max-width: 100vw;
+    }
+  }
+
+  .projects__subheading {
+    margin: 0 auto;
+    max-width: 1296px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 13px;
+    font-family: "JostBold";
+    font-size: 16px;
+    line-height: 162%;
+    margin-bottom: 15px;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  .swiper-header {
+    margin: 0 auto 67px auto;
+    max-width: 1296px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .projects__heading {
+      font-family: "JostBold";
+      font-size: 52px;
+      line-height: 119%;
+
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+
+    .swiper-controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .projects__swiper-button-prev,
+      .projects__swiper-button-next {
+        position: static;
+        margin: 0;
+        padding: 0;
+        color: $gray-text;
+        font-size: 30px;
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
+
+      .projects__swiper-button-next::after,
+      .projects__swiper-button-prev::after {
+        content: "";
+      }
+    }
+  }
+
+  .projects__swiper-wrapper {
+    width: 100%;
+    height: 443px;
+
+    .projects__swiper-slide {
+      position: relative;
+      height: 443px;
+      width: 623px;
+      overflow: hidden;
+
+      &:hover {
+        img {
+          filter: brightness(0.3);
+          transition: all 0.2s ease;
+        }
+
+        .project__info {
+          display: block;
+        }
+      }
+
+      @media (max-width: 768px) {
+        max-width: 100%;
+      }
+
+      img {
+        height: 100%;
+      }
+
+      .project__info {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        display: none;
+
+        .popover-button {
+          @include button(60px);
+          margin: 0 auto;
+          border: 5px solid $gray-text;
+
+          &:active {
+            transform: scale(0.95);
+          }
+
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+
+        .project__type {
+          margin-top: 40px;
+          margin-bottom: 20px;
+          padding-top: 3px;
+          width: 116px;
+          height: 36px;
+          background-color: $accent-color;
+          color: white;
+          font-family: "JostBold";
+          font-size: 16px;
+          line-height: 26px;
+          text-align: center;
+        }
+
+        .project__name {
+          padding-top: 13px;
+          width: 419px;
+          height: 74px;
+          color: white;
+          font-family: "JostBold";
+          font-size: 32px;
+          line-height: 40px;
+          background-color: black;
+          text-align: center;
+        }
+      }
+
+      .project__popover:popover-open {
+        margin: auto;
+        padding: 1rem;
+        width: 1000px;
+        height: 500px;
+        border: none;
+        display: block;
+        transition: 0.4s ease;
+      }
+
+      .popover__info {
+        margin: auto;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 10px;
+      }
+
+      .popover__title {
+        font-family: "JostBold";
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+      }
+
+      #project1-popover {
+        background-image: url("/assets/images/project1.webp");
+        background-size: cover;
+      }
+
+      #project2-popover {
+        background-image: url("/assets/images/project2.webp");
+        background-size: cover;
+      }
+
+      #project3-popover {
+        background-image: url("/assets/images/project3.webp");
+        background-size: cover;
+      }
+
+      #project4-popover {
+        background-image: url("/assets/images/project4.webp");
+        background-size: cover;
+      }
+
+      #project5-popover {
+        background-image: url("/assets/images/project5.webp");
+        background-size: cover;
+      }
+    }
+  }
+}
 
 // Our Projects END
 // header start
