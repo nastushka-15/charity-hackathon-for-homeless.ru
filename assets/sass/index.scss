@@ -1324,33 +1324,162 @@ body {
 // Testimonials Женя
 
 .testimonials {
+    margin: 100px auto;
+    max-width: 1296px;
+    background-image: ('../images/left-screen.svg');
+    background-position: top left;
+
+    .testimonials__heading {
+        margin-bottom: 50px;
+        font-family: "JostBold";
+        font-size: 52px;
+        line-height: 119%;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
 
     .testimonialsSwiper {
+        text-align: center;
+
         .testimonials__swiper-wrapper {
             height: 281px;
 
             .testimonials__swiper-slide {
+                padding-right: 10px;
                 max-width: 950px;
                 height: 100%;
+                position: relative;
+                border-right: 1px solid black;
+            }
+
+            .slide_one:after {
+                content: '';
+                position: absolute;
+                border-style: solid;
+                border-width: 20px 0 20px 44px;
+                border-color: transparent #ffffff;
+                display: block;
+                width: 0;
+                z-index: 1;
+                right: -44px;
+                top: 40px;
+            }
+
+            .slide_one:before {
+                content: '';
+                position: absolute;
+                border-style: solid;
+                border-width: 20px 0 20px 44px;
+                border-color: transparent #000000;
+                display: block;
+                width: 0;
+                z-index: 0;
+                right: -45px;
+                top: 40px;
+            }
+
+            .slide_two:after {
+                content: '';
+                position: absolute;
+                border-style: solid;
+                border-width: 20px 0 20px 44px;
+                border-color: transparent #ffffff;
+                display: block;
+                width: 0;
+                z-index: 1;
+                right: -44px;
+                top: 130px;
+            }
+
+            .slide_two:before {
+                content: '';
+                position: absolute;
+                border-style: solid;
+                border-width: 20px 0 20px 44px;
+                border-color: transparent #000000;
+                display: block;
+                width: 0;
+                z-index: 0;
+                right: -45px;
+                top: 130px;
+            }
+
+            .slide_three:after {
+                content: '';
+                position: absolute;
+                border-style: solid;
+                border-width: 20px 0 20px 44px;
+                border-color: transparent #ffffff;
+                display: block;
+                width: 0;
+                z-index: 1;
+                right: -44px;
+                top: 220px;
+            }
+
+            .slide_three:before {
+                content: '';
+                position: absolute;
+                border-style: solid;
+                border-width: 20px 0 20px 44px;
+                border-color: transparent #000000;
+                display: block;
+                width: 0;
+                z-index: 0;
+                right: -45px;
+                top: 220px;
+            }
+
+            .testimonials__text {
+                margin-bottom: 40px;
+                color: $gray-text;
+                font-family: Jost;
+                font-size: 32px;
+                line-height: 42px;
+                text-align: left;
+                text-transform: capitalize;
+            }
+
+            .testimonials__client {
+                display: flex;
+                align-items: center;
+                gap: 37px;
+
+                i {
+                    font-size: 62px;
+                }
+
+                .client__name {
+                    font-family: 'JostBold';
+                    font-size: 32px;
+                    line-height: 42px;
+                    text-align: left;
+                }
+
+                .client__details {
+                    color: $gray-text;
+                    font-size: 24px;
+                    line-height: 34px;
+                    text-align: left;
+                }
             }
         }
 
         .testimonials__pagination {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             .swiper-pagination-bullet {
-                width: 20px;
-                height: 20px;
-                text-align: center;
-                line-height: 20px;
-                font-size: 12px;
-                color: #000;
-                opacity: 1;
-                background: rgba(0, 0, 0, 0.2);
+                width: 70px;
+                height: 70px;
             }
 
             .swiper-pagination-bullet-active {
-                color: #fff;
-                background: #007aff;
+                width: 110px;
+                height: 110px;
             }
 
             // img {
@@ -1359,7 +1488,6 @@ body {
             //     border-radius: 50%;
             // }
 
-            // <img src="./assets/images/testimonial1.webp" alt=""><img src="./assets/images/testimonial2.webp" alt=""><img src="./assets/images/testimonial3.webp" alt="">
         }
     }
 }
