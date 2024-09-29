@@ -43,6 +43,52 @@ counters.forEach(counter => {
 });
 
 
+// Slider
 
+const slider = document.querySelector('.slider');
+const sliderImages = document.querySelectorAll('.slider__img');
+const sliderLine = document.querySelector('.slider__line');
 
+const sliderBtnNext = document.querySelector('.slider__btn-next');
+const sliderBtnPrev = document.querySelector('.slider__btn-prev');
 
+let sliderCount = 0;
+let sliderWidth = slider.offsetWidth;
+const imageWidth = sliderImages[0].offsetWidth;
+sliderLine.style.width = `${sliderImages.length * imageWidth}px`;
+
+// перемотка слайдера вперед
+sliderBtnNext.addEventListener('click', nextSlide);
+
+// перемотка слайдера назад
+sliderBtnPrev.addEventListener('click', prevSlider);
+
+function nextSlide() {
+  sliderCount++;
+  if (sliderCount >= sliderImages.length) {
+    sliderCount = 0;
+    let newPosition = slider.offsetWidth;
+    sliderLine.style.transition = 'none';
+    sliderLine.style.transform = `translateX(${newPosition}px)`;
+  }
+  rollSlider();
+}
+
+function prevSlider() {
+  sliderCount--;
+  if (sliderCount < 0) {
+    sliderCount = sliderImages.length - 1;
+  }
+  rollSlider();
+}
+
+function rollSlider() {
+  let newPosition = -sliderCount * imageWidth;
+  sliderLine.style.transition = 'transform 0.5s ease';
+  sliderLine.style.transform = `translateX(${newPosition}px)`;
+}
+
+// автоматическое перелистывание слайдеров
+// setInterval(() => {
+//     nextSlide()
+// }, 3000);
