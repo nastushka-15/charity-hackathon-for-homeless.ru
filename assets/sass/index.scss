@@ -1195,3 +1195,30 @@ body {
 }
 
 // Our Blog конец
+
+
+// Testimonials Женя
+
+.testimonials {
+    .textimonials-container {
+        display: flex;
+
+        .testimonialsSwiper {
+            .testimonials__swiper-wrapper {
+                height: 281px;
+
+                .testimonials__swiper-slide {
+                    width: 70px;
+                    height: 70px;
+
+                    img {
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Testimonials END

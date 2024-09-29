@@ -1121,4 +1121,19 @@ body {
 .our-blog .card__button .button__image {
   width: 1.4rem;
   height: 100%;
+}
+
+.testimonials .textimonials-container {
+  display: flex;
+}
+.testimonials .textimonials-container .testimonialsSwiper .testimonials__swiper-wrapper {
+  height: 281px;
+}
+.testimonials .textimonials-container .testimonialsSwiper .testimonials__swiper-wrapper .testimonials__swiper-slide {
+  width: 70px;
+  height: 70px;
+}
+.testimonials .textimonials-container .testimonialsSwiper .testimonials__swiper-wrapper .testimonials__swiper-slide img {
+  width: 100%;
+  border-radius: 50%;
 }/*# sourceMappingURL=index.css.map */
