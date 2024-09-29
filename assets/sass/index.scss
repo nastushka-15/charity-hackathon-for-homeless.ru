@@ -793,7 +793,7 @@ body {
 
 //footer start
 .sign-up_form {
-    background:  #FB5B11;
+    background: #FB5B11;
     width: 1296px;
     height: 184.32px;
     position: absolute;
@@ -807,7 +807,7 @@ body {
 
 .input-box__wrap {
     border-bottom: 1px solid white;
-   
+
 }
 
 .form__input {
@@ -860,14 +860,17 @@ body {
     align-items: center;
 }
 
-.footer__logo-box, .footer__link-box, .footer__info-box, .footer__link-social-box {
+.footer__logo-box,
+.footer__link-box,
+.footer__info-box,
+.footer__link-social-box {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 70%;
 }
 
-.footer-allrihts{
+.footer-allrihts {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -898,7 +901,8 @@ body {
 
 .footer-link {
     text-decoration: none;
-    color: #cdcdcd;;
+    color: #cdcdcd;
+    ;
 }
 
 .footer-link:visited {
@@ -908,6 +912,7 @@ body {
 .footer-link:hover {
     color: #FB5B11;
 }
+
 //footer end
 
 // latest Services начало
@@ -1319,25 +1324,45 @@ body {
 // Testimonials Женя
 
 .testimonials {
-    .textimonials-container {
-        display: flex;
 
-        .testimonialsSwiper {
-            .testimonials__swiper-wrapper {
-                height: 281px;
+    .testimonialsSwiper {
+        .testimonials__swiper-wrapper {
+            height: 281px;
 
-                .testimonials__swiper-slide {
-                    width: 70px;
-                    height: 70px;
-
-                    img {
-                        width: 100%;
-                        border-radius: 50%;
-                    }
-                }
+            .testimonials__swiper-slide {
+                max-width: 950px;
+                height: 100%;
             }
+        }
+
+        .testimonials__pagination {
+
+            .swiper-pagination-bullet {
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                line-height: 20px;
+                font-size: 12px;
+                color: #000;
+                opacity: 1;
+                background: rgba(0, 0, 0, 0.2);
+            }
+
+            .swiper-pagination-bullet-active {
+                color: #fff;
+                background: #007aff;
+            }
+
+            // img {
+            //     width: 70px;
+            //     height: 70px;
+            //     border-radius: 50%;
+            // }
+
+            // <img src="./assets/images/testimonial1.webp" alt=""><img src="./assets/images/testimonial2.webp" alt=""><img src="./assets/images/testimonial3.webp" alt="">
         }
     }
 }
+
 
 // Testimonials END
