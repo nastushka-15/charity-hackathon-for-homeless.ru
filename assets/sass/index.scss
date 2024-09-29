@@ -26,12 +26,15 @@ body {
 }
 
 .process_wrapper {
-  max-width: 1296px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    max-width: 1296px;
+    margin: 0 auto;
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    @media (max-width: 768px) {
+        max-width: 700px;
+    }
 
   .process_subheading {
     margin: 0 auto;
@@ -57,10 +60,13 @@ body {
 }
 
 .process_buttonslist {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 90px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
 .process_buttonlist__item {
@@ -94,69 +100,97 @@ body {
 }
 
 .process_video {
-  iframe {
-    display: none;
-  }
+    iframe {
+        display: none;
+width: 1296px;
+height: 541px;
+@media (max-width: 768px) {
+    width: 700px;
+    height: 300px;
+}
+
+    }
 }
 
 // How to Process end
 
 // Price Table start
-.price {
-  max-height: 1084px;
-  background-image: url(./../images/pricebg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 142px;
+.price{
+    max-height: 1084px;
+    background-image: url(./../images/pricebg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 142px ;
+    @media (max-width: 768px) {
+        max-height: fit-content;
+    }
 }
-.price_wrapper {
-  max-width: 1296px;
-  height: 100%;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .price_subheading {
+.price_wrapper{
+    max-width: 1296px;
+    height: 100%;
     margin: 0 auto;
-    text-align: center;
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    @media (max-width: 768px) {
+        max-width: 700px;
+    }
+
+    .price_subheading {
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px; 
+        font-family: "JostBold";
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 162%;
+        margin-bottom: 14px;
+        margin-top: 143px;
+        @media (max-width: 768px) {
+            margin-top: 60px;
+        }
+    }
+    
+    .price_heading{   
+        margin-bottom: 37px;
+        font-family: "JostBold"; 
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 119%;
+        margin-bottom: 67px;
+
+    }
+}
+
+
+.price_cards{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 13px;
-    font-family: "JostBold";
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 162%;
-    margin-bottom: 14px;
-    margin-top: 143px;
-  }
+    gap: 24px;
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 
-  .price_heading {
-    margin-bottom: 37px;
-    font-family: "JostBold";
-    font-weight: 600;
-    font-size: 52px;
-    line-height: 119%;
-    margin-bottom: 67px;
-  }
 }
+.price_cards__item{
+    width: 416px;
+    height: 536px;
+    border: 1px solid #d8d8d8;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    margin-bottom: 236px;
+    position: relative;
 
-.price_cards {
-  display: flex;
-  gap: 24px;
-}
-.price_cards__item {
-  width: 416px;
-  height: 536px;
-  border: 1px solid #d8d8d8;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: white;
-  margin-bottom: 236px;
-  position: relative;
+    @media (max-width: 768px) {
+        margin-bottom: 24px;
+        }
+
 
   &::before {
     content: "";
@@ -292,7 +326,7 @@ body {
 // banner section Женя
 .banner {
   position: relative;
-  background: url("../images/crane.jpg"),
+  background: url("../images/crane.webp"),
     linear-gradient(
       180deg,
       rgba(14, 14, 14, 0.3) 0%,
@@ -606,27 +640,27 @@ body {
       }
 
       #project1-popover {
-        background-image: url("/assets/images/project1.webp");
+        background-image: url("../images/project1.webp");
         background-size: cover;
       }
 
       #project2-popover {
-        background-image: url("/assets/images/project2.webp");
+        background-image: url("../images/project2.webp");
         background-size: cover;
       }
 
       #project3-popover {
-        background-image: url("/assets/images/project3.webp");
+        background-image: url("../images/project3.webp");
         background-size: cover;
       }
 
       #project4-popover {
-        background-image: url("/assets/images/project4.webp");
+        background-image: url("../images/project4.webp");
         background-size: cover;
       }
 
       #project5-popover {
-        background-image: url("/assets/images/project5.webp");
+        background-image: url("../images/project5.webp");
         background-size: cover;
       }
     }
@@ -771,6 +805,125 @@ body {
 
 // header end
 
+//footer start
+.sign-up_form {
+    background:  #FB5B11;
+    width: 1296px;
+    height: 184.32px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -91px;
+    margin-left: calc((100% - 1296px)/2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-box__wrap {
+    border-bottom: 1px solid white;
+   
+}
+
+.form__input {
+    width: 417px;
+    height: 45.1px;
+    background-color: #FB5B11;
+    border: 0;
+}
+
+.form__input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-transform: capitalize;
+    color: #cdcdcd;
+    font-family: "Barlow", sans-serif;
+}
+
+.form-text {
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 131%;
+    text-transform: capitalize;
+    color: white;
+}
+
+.form-button {
+    border: 0;
+}
+
+.footer-container {
+    background: #000;
+    width: 100%;
+    height: 637.1px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.footer_inner-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/footer-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 0 bottom 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__logo-box, .footer__link-box, .footer__info-box, .footer__link-social-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+}
+
+.footer-allrihts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70.59px;
+}
+
+.footer-title {
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 162%;
+    text-transform: capitalize;
+    color: white;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-transform: capitalize;
+    color: #cdcdcd;
+    font-family: "Barlow", sans-serif;
+}
+
+.footer-text:hover {
+    color: #FB5B11;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #cdcdcd;;
+}
+
+.footer-link:visited {
+    color: #cdcdcd;
+}
+
+.footer-link:hover {
+    color: #FB5B11;
+}
+//footer end
+
 // latest Services начало
 
 %our-blog-headline {
@@ -783,13 +936,16 @@ body {
 
 .section-latest-services {
   max-width: 1297px;
-  height: 426px;
+  height: 27rem;
   margin: 0 auto;
   margin-top: 300px;
   display: flex;
 
   @media (max-width: 1152px) {
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 50rem;
   }
 
   .latest-services {
@@ -878,6 +1034,10 @@ body {
       position: absolute;
       bottom: -2.5rem;
       right: -2rem;
+
+      @media (max-width: 1152px) {
+        display: none;
+      }
     }
   }
 }
@@ -1421,3 +1581,39 @@ body {
     width: 768px;
   }
 }
+
+// latest cлайдер
+.swiper {
+    width: 55%;
+    height: 100%;
+    @media (max-width: 1152px) {
+        margin-top: 20px;
+      }
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-slide_top img{
+    object-position: 50% 30%;
+  }
+
+  .swiper-pagination-bullet{
+    width: 16px;
+    height: 16px;
+    background-color: #0c0c0b;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #fb5b11;
+  }
+
