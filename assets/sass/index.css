@@ -744,6 +744,11 @@ body {
   background-position: top right;
   margin-top: 300px;
 }
+@media (max-width: 768px) {
+  .about-us {
+    background-image: none;
+  }
+}
 
 .about-us__container-main {
   height: 550px;
@@ -751,6 +756,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-left: 250px;
+}
+@media (max-width: 768px) {
+  .about-us__container-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .about-us__content {
@@ -845,6 +861,11 @@ body {
   background-repeat: no-repeat;
   background-position: top left;
 }
+@media (max-width: 768px) {
+  .our-company {
+    background-image: none;
+  }
+}
 
 .our-company__content {
   height: 550px;
@@ -881,6 +902,11 @@ body {
   line-height: 162%;
   margin-bottom: 15px;
 }
+@media (max-width: 768px) {
+  .our-company__subheading {
+    text-align: center;
+  }
+}
 
 .our-company__subtitle {
   margin-bottom: 37px;
@@ -900,6 +926,19 @@ body {
   font-size: 16px;
   line-height: 162%;
   margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .our-company__section-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 75px;
+  }
 }
 
 .card-content {
@@ -923,4 +962,10 @@ body {
 .our-company__text {
   font-size: 24px;
   line-height: 34px;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    width: 768px;
+  }
 }/*# sourceMappingURL=index.css.map */
