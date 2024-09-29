@@ -739,17 +739,18 @@ body {
 }
 
 .about-us {
-  padding-top: 300px;
+  background-image: url(./../images/right-screen.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin-top: 300px;
 }
 
 .about-us__container-main {
+  height: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 212px;
+  margin-left: 250px;
 }
 
 .about-us__content {
@@ -777,6 +778,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 150px;
   padding-top: 40px;
 }
 

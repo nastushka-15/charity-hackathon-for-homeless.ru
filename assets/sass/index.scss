@@ -569,14 +569,19 @@ body {
 // About us start
 
 .about-us {
-  padding-top: 300px;
+  // padding-top: 300px;
+  background-image: url(./../images/right-screen.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin-top: 300px;
 }
 
 .about-us__container-main {
+  height: 550px;
   display: flex;
-  justify-content: space-between;
-  margin-left: 212px;
+  margin-left: 250px;
 }
+
 .about-us__content {
   display: flex;
 }
@@ -597,6 +602,7 @@ body {
 
 .about-us__details {
   flex-direction: column;
+  margin-left: 150px;
   padding-top: 40px;
 }
 
