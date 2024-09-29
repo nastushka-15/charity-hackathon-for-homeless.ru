@@ -50,13 +50,13 @@
 
                         <div class="header__main-menu_nav-bar">
                             <a class="header-nav-bar__link" href="#home">Home</a>
-                            <a class="header-nav-bar__link" href="#">About</a>
+                            <a class="header-nav-bar__link" href="#about">About</a>
                             <a class="header-nav-bar__link" href="#projects">Projects</a>
-                            <a class="header-nav-bar__link" href="#">Testimonials</a>
-                            <a class="header-nav-bar__link" href="#">Team</a>
-                            <a class="header-nav-bar__link" href="#">Pricing</a>
-                            <a class="header-nav-bar__link" href="#">Blog</a>
-                            <a class="header-nav-bar__link" href="#">Contact</a>
+                            <a class="header-nav-bar__link" href="#services">Services</a>
+                            <a class="header-nav-bar__link" href="#pricing">Pricing</a>
+                            <a class="header-nav-bar__link" href="#process">Process</a>
+                            <a class="header-nav-bar__link" href="#blog">Blog</a>
+                            <a class="header-nav-bar__link" href="#contact">Contact</a>
                         </div>
                     </div>
 
@@ -106,7 +106,7 @@
 
         <!-- latest Services Аня -->
 
-        <section class="section-latest-services">
+        <section class="section-latest-services" id="services">
             <div class="latest-services">
                 <div class="latest-services__text">
                     <img src="./assets/images/processLine.png" alt="orange-line">
@@ -521,7 +521,7 @@
 
             <!-- Our Blog Аня-->
 
-            <section class="our-blog">
+            <section class="our-blog" id="blog">
 
                 <div class="our-blog__text">
                     <img src="./assets/images/processLine.png" alt="orange-line">
@@ -638,7 +638,69 @@
             <!-- Card Вика -->
 
     </main>
-    <footer></footer>
+    
+    <footer class="footer" id="contact">
+        <form name="loginForm" class="sign-up_form">
+            <div class="sign-up_form-text">
+                <p class="form-text">Sign up for our newsletter</p>
+                <p class="form-text">to get weekly updates.</p>
+            </div>
+            <div class="sign-up_form-input-box">
+                <div class="input-box__wrap">
+                    <input type="email" class="form__input footer-text" name="email" placeholder="Inter Your Email">
+                    <button class="form-button" name="submitBtn"><img  src="./assets/images/form-button.svg" alt="form-button"></button>
+                </div>
+                <span class="footer-title" id="emailSuccess"></span>
+                <span class="error footer-title" id="emailError"></span>
+            </div>
+        </form>
+        <div class="footer-container">
+            <div class="footer_inner-container">
+                <div class="footer__logo-box">
+                    <div class="footer__logo-box-container">
+                        <img src="./assets/images/footer-logo.svg" alt="footer-logo">
+                        <p class="footer-text">Welcome to consaik, a leader in the industry/sector since</p>
+                        <p class="footer-text">With a passion for excellence and a commitment.</p>
+                    </div>
+                    <div class="footer__logo-box-text">
+                        <p class="footer-title">We are available</p>
+                        <p class="footer-text">Mon - Sat : 10:00Am To 07:30Pm</p>
+                    </div>
+
+                </div>
+                <div class="footer__link-box">
+                    <p class="footer-title">Quick links</p>
+                    <a class="footer-text footer-link" href="#about">About us</a>
+                    <a class="footer-text footer-link" href="#services">Our services</a>
+                    <a class="footer-text footer-link" href="#projects">Our projects</a>
+                    <a class="footer-text footer-link" href="#pricing">Our pricing</a>
+                    <a class="footer-text footer-link" href="#">Contact us</a>
+                </div>
+                <div class="footer__info-box">
+                    <p class="footer-title">Information</p>
+                    <a class="footer-text footer-link" href="#">Environmental Impact</a>
+                    <a class="footer-text footer-link" href="#">A sustainable Future</a>
+                    <a class="footer-text footer-link" href="#">Architectural Design</a>
+                    <a class="footer-text footer-link" href="#">Structural Engineering</a>
+                    <a class="footer-text footer-link" href="#">Regulatory Compliance</a>
+                </div>
+                <div class="footer__link-social-box">
+                    <p class="footer-title">Social Media</p>
+                    <a class="footer-text footer-link" href="www..." target="_blank">Facebook</a>
+                    <a class="footer-text footer-link" href="www..." target="_blank">Instagram</a>
+                    <a class="footer-text footer-link" href="www..." target="_blank">Twitter</a>
+                    <a class="footer-text footer-link" href="www..." target="_blank">YouTube</a>
+                    <a class="footer-text footer-link" href="www..." target="_blank">LinkedIn</a>
+
+                </div>
+
+            </div>
+            <div class="footer-allrihts">
+                <p class="footer-text">© 1995-2024 All rights for Conbuild exclusive</p>
+            </div>
+        </div>
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./projects.js"></script>
     <script src="./script.js"></script>
