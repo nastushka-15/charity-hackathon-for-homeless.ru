@@ -20,3 +20,8 @@ const swiper = new Swiper('.mySwiper', {
         }
     }
 });
+
+
+const swiperTestim = new Swiper(".testimonialsSwiper", {
+    direction: "vertical"
+});

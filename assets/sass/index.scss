@@ -456,7 +456,7 @@ body {
 
 // Our Projects Женя
 .projects {
-    margin-top: 250px;
+    margin-top: 100px;
     overflow: hidden;
 
     .projects__swiper {
@@ -803,7 +803,7 @@ body {
 %our-blog-headline {
     display: flex;
     align-items: center;
-    gap: 1rem; 
+    gap: 1rem;
     font-size: 16px;
     line-height: 162%;
 }
@@ -836,12 +836,12 @@ body {
 
         .latest-services__text {
             @extend %our-blog-headline;
-            font-family: "JostBold",sans-serif;
+            font-family: "JostBold", sans-serif;
             justify-content: center;
         }
 
-        .latest-services__title{
-            font-family: "JostBold",sans-serif;
+        .latest-services__title {
+            font-family: "JostBold", sans-serif;
             font-size: clamp(30px, 4.8vw, 52px);
             line-height: 62px;
             margin-top: 1rem;
@@ -849,7 +849,7 @@ body {
             height: 7.8rem;
         }
 
-        .latest-services__info{
+        .latest-services__info {
             font-size: 16px;
             line-height: 162%;
             margin-top: 0.5rem;
@@ -857,12 +857,12 @@ body {
             height: 4.8rem;
             color: rgb(85, 85, 85);
         }
-        
+
         .latest-services__button {
             height: 60px;
             width: 146px;
             margin-top: 43px;
-            font-family: "JostBold",sans-serif;
+            font-family: "JostBold", sans-serif;
             font-weight: 600;
             font-size: 16px;
             line-height: 162%;
@@ -876,34 +876,35 @@ body {
             transition: 0.5s;
             box-shadow: 0 0 10px #555555;
             cursor: pointer;
-    
+
             &:hover {
 
-            background-color: $accent-color;
-            color: white;
-            text-decoration: none;
-    
+                background-color: $accent-color;
+                color: white;
+                text-decoration: none;
+
             }
-        
+
             &:active {
                 transform: scale(0.99);
             }
         }
+
         .latest-services__button span {
-            margin-right: 10px; 
+            margin-right: 10px;
         }
-        
+
         .latest-services__button img {
             display: block;
-            width: 17px; 
-            height: 17px; 
+            width: 17px;
+            height: 17px;
         }
-        
+
         .latest-services__button:hover img {
             content: url(../images/arrow-top.svg);
         }
 
-        .worker-icon{
+        .worker-icon {
             position: absolute;
             bottom: -2.5rem;
             right: -2rem;
@@ -946,13 +947,13 @@ body {
 %our-blog-headline {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
     font-size: 16px;
     line-height: 162%;
 }
 
 %our-blog-link {
-    font-family: "JostBold",sans-serif;
+    font-family: "JostBold", sans-serif;
     font-size: 16px;
     line-height: 162%;
     text-decoration: none;
@@ -967,18 +968,18 @@ body {
     height: 1.6rem;
 }
 
-%order-blog-image{
+%order-blog-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
 }
 
-%order-blog-text_position{
+%order-blog-text_position {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
     font-weight: 400;
@@ -993,7 +994,7 @@ body {
 
     .our-blog__text {
         @extend %our-blog-headline;
-        font-family: "JostBold",sans-serif;
+        font-family: "JostBold", sans-serif;
         justify-content: center;
     }
 
@@ -1001,7 +1002,7 @@ body {
         margin-top: 1rem;
         align-self: center;
         text-align: center;
-        font-family: "JostBold",sans-serif;
+        font-family: "JostBold", sans-serif;
         font-size: clamp(30px, 4.8vw, 52px);
         line-height: 62px;
         max-width: 40.7rem;
@@ -1020,7 +1021,7 @@ body {
             margin-top: 2rem;
             justify-content: center;
         }
-            
+
         .events {
             text-align: start;
             max-width: 28.7rem;
@@ -1040,7 +1041,7 @@ body {
             }
 
             .events__title {
-                margin-top: 1rem; 
+                margin-top: 1rem;
                 font-family: "JostBold";
                 font-size: 32px;
                 line-height: 42px;
@@ -1071,6 +1072,7 @@ body {
             img {
                 @extend %order-blog-image;
             }
+
             .events-image_position {
                 position: absolute;
                 top: 0.6rem;
@@ -1092,7 +1094,7 @@ body {
             }
         }
     }
-        
+
     .our-blog__cards {
         max-width: 1297px;
         display: flex;
@@ -1116,27 +1118,28 @@ body {
             border: 1px solid rgb(216, 216, 216);
             box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
             position: relative;
-            
+
             .card__text {
                 @extend %our-blog-headline;
-                color:$gray-text;
+                color: $gray-text;
                 margin-top: 1.4rem;
             }
 
             .card__title {
-                margin-top: 1rem; 
-                font-family: "JostBold",sans-serif;
+                margin-top: 1rem;
+                font-family: "JostBold", sans-serif;
                 font-size: 24px;
                 line-height: 34px;
                 width: 22.4rem;
                 height: 4.3rem;
             }
-            
+
             .card__link {
                 @extend %our-blog-link;
                 margin-top: 1rem;
                 margin-bottom: 1.4rem;
             }
+
             .card-link_black {
                 color: black;
             }
@@ -1146,18 +1149,18 @@ body {
                 height: 18.8rem;
                 align-self: center;
                 position: relative;
-                
+
                 img {
                     @extend %order-blog-image;
                 }
             }
         }
-        
+
         .cards-image_position {
-                position: absolute;
-                left: -18rem;
-                top: 2.7rem;
-                width: 4.5rem;
+            position: absolute;
+            left: -18rem;
+            top: 2.7rem;
+            width: 4.5rem;
         }
 
         .card__position {
@@ -1173,7 +1176,7 @@ body {
                 img {
                     @extend %order-blog-image;
                 }
-                
+
                 .cards-image_position-text {
                     @extend %order-blog-text_position;
                     font-size: 16px;
