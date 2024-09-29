@@ -554,6 +554,11 @@ body {
 .projects .projects__swiper-wrapper .projects__swiper-slide .project__info .popover-button:active {
   transform: scale(0.95);
 }
+@media (max-width: 768px) {
+  .projects .projects__swiper-wrapper .projects__swiper-slide .project__info .popover-button {
+    display: none;
+  }
+}
 .projects .projects__swiper-wrapper .projects__swiper-slide .project__info .project__type {
   margin-top: 40px;
   margin-bottom: 20px;
