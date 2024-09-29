@@ -717,7 +717,8 @@ height: 541px;
   font-family: "Barlow", sans-serif;
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  gap: 2%;
 }
 
 .header__main-menu_icons-wrap {
