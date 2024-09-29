@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -23,6 +24,7 @@ body {
   background-position: top right;
   margin-top: 142px;
 }
+
 .process_wrapper {
   max-width: 1296px;
   margin: 0 auto;
