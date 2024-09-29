@@ -954,7 +954,7 @@ body {
 
 .section-latest-services {
     max-width: 1297px;
-    height: 27rem;
+    height: fit-content;
     margin: 0 auto;
     margin-top: 300px;
     display: flex;
@@ -963,7 +963,6 @@ body {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        height: 50rem;
     }
 
     .latest-services {
