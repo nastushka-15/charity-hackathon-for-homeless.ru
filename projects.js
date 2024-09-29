@@ -23,5 +23,7 @@ const swiper = new Swiper('.mySwiper', {
 
 
 const swiperTestim = new Swiper(".testimonialsSwiper", {
-    direction: "vertical"
+    direction: "vertical",
+    slidesPerView: 3,
+    spaceBetween: 24
 });
