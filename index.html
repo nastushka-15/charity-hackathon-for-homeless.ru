@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/sass/index.css" />
     <title>Conbuild</title>
     <script src="https://kit.fontawesome.com/3b773055fe.js" crossorigin="anonymous"></script>
@@ -48,12 +49,12 @@
                         </div>
 
                         <div class="header__main-menu_nav-bar">
-                            <a class="header-nav-bar__link" href="#">Home</a>
+                            <a class="header-nav-bar__link" href="#home">Home</a>
                             <a class="header-nav-bar__link" href="#">About</a>
-                            <a class="header-nav-bar__link" href="#">Project</a>
+                            <a class="header-nav-bar__link" href="#projects">Projects</a>
                             <a class="header-nav-bar__link" href="#">Testimonials</a>
                             <a class="header-nav-bar__link" href="#">Team</a>
-                            <a class="header-nav-bar__link" href="#pricing">Pricing</a>
+                            <a class="header-nav-bar__link" href="#">Pricing</a>
                             <a class="header-nav-bar__link" href="#">Blog</a>
                             <a class="header-nav-bar__link" href="#contact">Contact</a>
                         </div>
@@ -74,7 +75,7 @@
     </header>
     <main>
         <!-- banner section Женя -->
-        <section class="banner" id="Home">
+        <section class="banner" id="home">
             <div class="banner-container">
                 <div class="banner__info">
                     <h1 class="banner__info--title">Experts in construction</h1>
@@ -87,7 +88,7 @@
                     </button>
                 </div>
                 <div class="banner__image">
-                    <img class="banner__image--pic" src="./assets/images/cheerful-engineer.svg" alt="construction-man">
+                    <img class="banner__image--pic" src="./assets/images/cheerful-engineer.webp" alt="construction-man">
                 </div>
             </div>
             <div class="banner__machine">
@@ -104,6 +105,25 @@
 
 
         <!-- latest Services Аня -->
+
+        <section class="section-latest-services">
+            <div class="latest-services">
+                <div class="latest-services__text">
+                    <img src="./assets/images/processLine.png" alt="orange-line">
+                    <span>Latest Services</span>
+                </div>
+                <h3 class="latest-services__title">
+                    The Best Services For You.
+                </h3>
+                <p class="latest-services__info">In today's world, we're bombarded with choices.From streaming
+                    services to meal kits, it can be overwhelming to find the <br> best option.</p>
+                <button class="latest-services__button">
+                    <span>See All</span>
+                    <img src="./assets/images/blackarrow.svg" alt="arrow">
+                </button>
+                <div class="worker-icon"><img src="./assets/images/worker.svg" alt="worker"></div>
+            </div>
+        </section>
 
         <!-- latest Services End -->
 
@@ -124,216 +144,381 @@
 
 
         <!-- Our Projects  Женя-->
-        <section class="projects">
+        <section class="projects" id="projects">
+            <div class="projects__subheading">
+                <img src="./assets/images/processLine.png" alt="orange line">
+                <span>Our Projects</span>
+            </div>
+            <div class="projects__swiper mySwiper">
+                <div class="swiper-header">
+                    <h3 class="projects__heading">Trusted & Reliable</h3>
+                    <div class="swiper-controls">
+                        <div class="projects__swiper-button-prev swiper-button-prev"><i
+                                class="fa-solid fa-arrow-left-long"></i>
+                        </div>
+                        <div class="projects__swiper-button-next swiper-button-next"><i
+                                class="fa-solid fa-arrow-right-long"></i></div>
+                    </div>
+                </div>
+                <div class="projects__swiper-wrapper swiper-wrapper">
+                    <div class="projects__swiper-slide swiper-slide">
+                        <img src="./assets/images/project1.webp" alt="project1">
+                        <div class="project__info">
+                            <button class="popover-button" popovertarget="project1-popover">+</button>
+                            <p class="project__type">Contraction</p>
+                            <p class="project__name">Apartment Renovation</p>
+                        </div>
+                        <div class="project__popover" popover id="project1-popover">
+                            <div class="popover__info">
+                                <h3 class="popover__title">Apartment Renovation</h3>
+                                <p class="popover__text">This apartment renovation project at Willow Ridge Complex aims
+                                    to
+                                    modernize and rejuvenate 30 residential units,
+                                    enhancing aesthetic appeal, functionality, and energy efficiency. Scheduled to be
+                                    completed over a 12-week period, the
+                                    initiative focuses on contemporary design elements that complement the existing
+                                    architecture while providing residents
+                                    with updated amenities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__swiper-slide swiper-slide">
+                        <img src="./assets/images/project2.webp" alt="project2">
+                        <div class="project__info">
+                            <button class="popover-button" popovertarget="project2-popover">+</button>
+                            <p class="project__type">Contraction</p>
+                            <p class="project__name">Private House</p>
+                        </div>
+                        <div class="project__popover" popover id="project2-popover">
+                            <div class="popover__info">
+                                <h3 class="popover__title">Private House</h3>
+                                <p class="popover__text">This unique private house project envisions a harmonious blend
+                                    of
+                                    modern design and natural surroundings. Set in a
+                                    picturesque suburban landscape, the site encompasses a spacious plot that allows for
+                                    optimal sunlight and breathtaking
+                                    views. The architectural layout features an open-concept living space, characterized
+                                    by
+                                    expansive windows that invite
+                                    the outside in, creating a seamless connection with nature.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__swiper-slide swiper-slide">
+                        <img src="./assets/images/project3.webp" alt="project3">
+                        <div class="popover__info"></div>
+                        <div class="project__info">
+                            <button class="popover-button" popovertarget="project3-popover">+</button>
+                            <p class="project__type">Contraction</p>
+                            <p class="project__name">Skyline Tower Renovation</p>
+                        </div>
+                        <div class="project__popover" popover id="project3-popover">
+                            <div class="popover__info">
+                                <h3 class="popover__title">Skyline Tower Renovation</h3>
+                                <p class="popover__text">The Skyline Tower Renovation project aims to breathe new life
+                                    into
+                                    a beloved landmark that has stood as a symbol of
+                                    innovation for decades. Our mission is to modernize the interior and exterior of the
+                                    building while preserving its
+                                    iconic architectural features.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__swiper-slide swiper-slide">
+                        <img src="./assets/images/project4.webp" alt="project4">
+                        <div class="project__info">
+                            <button class="popover-button" popovertarget="project4-popover">+</button>
+                            <p class="project__type">Contraction</p>
+                            <p class="project__name">Apartment Building</p>
+                        </div>
+                        <div class="project__popover" popover id="project4-popover">
+                            <div class="popover__info">
+                                <h3 class="popover__title">Apartment Building</h3>
+                                <p class="popover__text">The Skyline Apartments project is an ambitious and modern
+                                    development that aims to redefine urban living in the heart of
+                                    the city. This state-of-the-art residential building, standing at ten stories tall,
+                                    will
+                                    encompass 80 elegantly designed
+                                    apartments, ranging from cozy one-bedroom units to spacious three-bedroom
+                                    penthouses.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__swiper-slide swiper-slide">
+                        <img src="./assets/images/project5.webp" alt="project5">
+                        <div class="project__info">
+                            <button class="popover-button" popovertarget="project5-popover">+</button>
+                            <p class="project__type">Contraction</p>
+                            <p class="project__name">City Mall Renovation</p>
+                        </div>
+                        <div class="project__popover" popover id="project5-popover">
+                            <div class="popover__info">
+                                <h3 class="popover__title">City Mall Renovation</h3>
+                                <p class="popover__text">The City Mall Renovation project is an ambitious initiative
+                                    aimed
+                                    at revitalizing one of the city's most frequented
+                                    shopping destinations. Spanning over 200,000 square feet, the project will include
+                                    extensive upgrades to the mall's
+                                    interior and exterior, with a focus on enhancing visitor experience and modernizing
+                                    facilities. Key elements of the
+                                    renovation will feature an expanded food court with diverse dining options, updated
+                                    retail spaces designed to attract
+                                    high-profile brands, and improved accessibility for all patrons.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        </section>
-
-        <!-- Our Projects  End-->
+            <!-- Our Projects  End-->
 
 
 
             <!-- How to Process  Галя-->
-<section class="process" id="process">
-    <div class="process_wrapper">
-        <div class="process_subheading">
-            <img src="./assets/images/processLine.png" alt="orange line">
-            <span>How to process</span>
-        </div>
-        <h3 class="process_heading">Steps in the Construction Process</h3>
-        <div class="process_buttonslist">
-            <button class="process_buttonlist__item">01. Planning and Design</button>
-            <button class="process_buttonlist__item">02. Permitting and Approvals</button>
-            <button class="process_buttonlist__item">03. Foundation Construction</button>
-        </div>
-        <div class="process_video">
-            <iframe width="1296" height="541" src="https://www.youtube.com/embed/HdW1-guocPA" frameborder="0" allowfullscreen></iframe>
-            <iframe width="1296" height="541" src="https://www.youtube.com/embed/qQ7MP2e7Bqk" frameborder="0" allowfullscreen></iframe>
-            <iframe width="1296" height="541" src="https://www.youtube.com/embed/s6E2t_kW57M" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-</section>
+            <section class="process" id="process">
+                <div class="process_wrapper">
+                    <div class="process_subheading">
+                        <img src="./assets/images/processLine.png" alt="orange line">
+                        <span>How to process</span>
+                    </div>
+                    <h3 class="process_heading">Steps in the Construction Process</h3>
+                    <div class="process_buttonslist">
+                        <button class="process_buttonlist__item">01. Planning and Design</button>
+                        <button class="process_buttonlist__item">02. Permitting and Approvals</button>
+                        <button class="process_buttonlist__item">03. Foundation Construction</button>
+                    </div>
+                    <div class="process_video">
+                        <iframe width="1296" height="541" src="https://www.youtube.com/embed/HdW1-guocPA"
+                            frameborder="0" allowfullscreen></iframe>
+                        <iframe width="1296" height="541" src="https://www.youtube.com/embed/qQ7MP2e7Bqk"
+                            frameborder="0" allowfullscreen></iframe>
+                        <iframe width="1296" height="541" src="https://www.youtube.com/embed/s6E2t_kW57M"
+                            frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
             <!-- How to Process  End-->
 
 
 
-        <!-- Our Testimonials Анастасия-->
+            <!-- Our Testimonials Анастасия-->
 
-        <!-- Our Testimonials  End-->
+            <!-- Our Testimonials  End-->
 
 
 
-        <!-- Our Testimonials  Анастасия-->
+            <!-- Our Testimonials  Анастасия-->
 
-        <!-- Our  Testimonials  -->
+            <!-- Our  Testimonials  -->
 
 
             <!-- Our Price Table Галя -->
-<section class="price" id="pricing">
-    <div class="price_wrapper">
-        <div class="price_subheading">
-            <img src="./assets/images/processLine.png" alt="orange line">
-            <span>Our Price table</span>
-        </div>
-        <h3 class="price_heading">Solutions For Price table</h3>
+            <section class="price" id="pricing">
+                <div class="price_wrapper">
+                    <div class="price_subheading">
+                        <img src="./assets/images/processLine.png" alt="orange line">
+                        <span>Our Price table</span>
+                    </div>
+                    <h3 class="price_heading">Solutions For Price table</h3>
 
-        <div class="price_cards">
+                    <div class="price_cards">
 
-            <!-- first card -->
-            <div class="price_cards__item">
-                <div class="price_card__heading">
-                    <div class="price_card__heading--value">$19.99 <sub>/M</sub></div>
-                    <div>
-                        <img src="./assets/images/pricestar.svg" alt="Start">
-                        <span>Basic</span>
+                        <!-- first card -->
+                        <div class="price_cards__item">
+                            <div class="price_card__heading">
+                                <div class="price_card__heading--value">$19.99 <sub>/M</sub></div>
+                                <div>
+                                    <img src="./assets/images/pricestar.svg" alt="Start">
+                                    <span>Basic</span>
+                                </div>
+                            </div>
+                            <div class="price_card__list">
+                                <ul>
+                                    <li>24/7 Free Hotline Service</li>
+                                    <li>Chat Support</li>
+                                    <li>5 Months After Delivery Support</li>
+                                    <li>Support with 8 Engineers</li>
+                                    <li>Team Management</li>
+                                    <li>Free Digital Marketing & Analysis</li>
+                                </ul>
+                            </div>
+                            <button class="price_card__button">
+                                <span>Start Free Trial</span>
+                                <img src="./assets/images/blackarrow.svg" alt="arrow">
+                            </button>
+                        </div>
+                        <!-- second card -->
+                        <div class="price_cards__item">
+                            <div class="price_cards__item--special">Special</div>
+                            <div class="price_card__heading">
+                                <div class="price_card__heading--value">$29.99 <sub>/M</sub></div>
+                                <div>
+                                    <img src="./assets/images/pricestar.svg" alt="Start">
+                                    <span>Standard</span>
+                                </div>
+                            </div>
+                            <div class="price_card__list">
+                                <ul>
+                                    <li>24/7 Free Hotline Service</li>
+                                    <li>Chat Support</li>
+                                    <li>5 Months After Delivery Support</li>
+                                    <li>Support with 8 Engineers</li>
+                                    <li>Team Management</li>
+                                    <li>Free Digital Marketing & Analysis</li>
+                                </ul>
+                            </div>
+                            <button class="price_card__button">
+                                <span>Start Free Trial</span>
+                                <img src="./assets/images/blackarrow.svg" alt="arrow">
+                            </button>
+                        </div>
+
+                        <!-- third card -->
+                        <div class="price_cards__item">
+
+                            <div class="price_card__heading">
+                                <div class="price_card__heading--value">$39.99 <sub>/M</sub></div>
+                                <div>
+                                    <img src="./assets/images/pricestar.svg" alt="Start">
+                                    <span>Premium</span>
+                                </div>
+                            </div>
+                            <div class="price_card__list">
+                                <ul>
+                                    <li>24/7 Free Hotline Service</li>
+                                    <li>Chat Support</li>
+                                    <li>5 Months After Delivery Support</li>
+                                    <li>Support with 8 Engineers</li>
+                                    <li>Team Management</li>
+                                    <li>Free Digital Marketing & Analysis</li>
+                                </ul>
+                            </div>
+                            <button class="price_card__button">
+                                <span>Start Free Trial</span>
+                                <img src="./assets/images/blackarrow.svg" alt="arrow">
+                            </button>
+                        </div>
+
                     </div>
                 </div>
-                <div class="price_card__list">
-                    <ul>
-                        <li>24/7 Free Hotline Service</li>
-                        <li>Chat Support</li>
-                        <li>5 Months After Delivery Support</li>
-                        <li>Support with 8 Engineers</li>
-                        <li>Team Management</li>
-                        <li>Free Digital Marketing & Analysis</li>
-                    </ul>
-                </div>
-                <button class="price_card__button">
-                    <span>Start Free Trial</span>
-                    <img src="./assets/images/blackarrow.svg" alt="arrow">
-                </button>
-            </div>
-<!-- second card -->
-            <div class="price_cards__item">
-                <div class="price_cards__item--special">Special</div>
-                <div class="price_card__heading">
-                    <div class="price_card__heading--value">$29.99 <sub>/M</sub></div>
-                    <div>
-                        <img src="./assets/images/pricestar.svg" alt="Start">
-                        <span>Standard</span>
-                    </div>
-                </div>
-                <div class="price_card__list">
-                    <ul>
-                        <li>24/7 Free Hotline Service</li>
-                        <li>Chat Support</li>
-                        <li>5 Months After Delivery Support</li>
-                        <li>Support with 8 Engineers</li>
-                        <li>Team Management</li>
-                        <li>Free Digital Marketing & Analysis</li>
-                    </ul>
-                </div>
-                <button class="price_card__button">
-                    <span>Start Free Trial</span>
-                    <img src="./assets/images/blackarrow.svg" alt="arrow">
-                </button>
-            </div>
-
-<!-- third card -->
-            <div class="price_cards__item">
-                
-                <div class="price_card__heading">
-                    <div class="price_card__heading--value">$39.99 <sub>/M</sub></div>
-                    <div>
-                        <img src="./assets/images/pricestar.svg" alt="Start">
-                        <span>Premium</span>
-                    </div>
-                </div>
-                <div class="price_card__list">
-                    <ul>
-                        <li>24/7 Free Hotline Service</li>
-                        <li>Chat Support</li>
-                        <li>5 Months After Delivery Support</li>
-                        <li>Support with 8 Engineers</li>
-                        <li>Team Management</li>
-                        <li>Free Digital Marketing & Analysis</li>
-                    </ul>
-                </div>
-                <button class="price_card__button">
-                    <span>Start Free Trial</span>
-                    <img src="./assets/images/blackarrow.svg" alt="arrow">
-                </button>
-            </div>
-
-        </div>
-    </div>
-</section>
+            </section>
             <!-- Our Price Table  End-->
 
 
-        <!-- Our Blog Аня-->
+            <!-- Our Blog Аня-->
 
-        <!-- Our Blog -->
+            <section class="our-blog">
+
+                <div class="our-blog__text">
+                    <img src="./assets/images/processLine.png" alt="orange-line">
+                    <span>Our Blog</span>
+                </div>
+                <h3 class="our-blog__title">
+                    Latest Insights And Updates
+                </h3>
+                <div class="our-blog__events">
+                    <div class="events">
+                        <div class="events__text">
+                            <img src="./assets/images/blackLine.png" alt="black line"><span>By Admin</span>
+                            <img src="./assets/images/pointBlog.png" alt="black point"><span>Building</span>
+                        </div>
+                        <h2 class="events__title">
+                            Stay up-to-date with the latest happenings.
+                        </h2>
+                        <p class="events__info">
+                            Stay informed with our regular updates on significant events, regulatory changes, and market trends. We cover a wide range of topics, from new technological.
+                        </p>
+                        <a href="#" class="card__btn events__link">
+                            <span>Render</span>
+                            <img src="./assets/images/orange-arrow.png" alt="orange arrow">
+                        </a>
+                    </div>
+                    <div class="events__image">
+                        <img src="./assets/images/worker1.webp" alt="Worker1">
+                        <div class="events-image_position">
+                            <img src="./assets/images/orangebg.svg" alt="orange-fon">
+                            <span class="events-image_position-text">29 Jun 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-blog__cards">
+                        <div class="card">
+                            <div class="card__image">
+                                <img src="./assets/images/worker2.jpg" alt="Worker2">
+                            </div>
+                            <div class="card__text">
+                                <img src="./assets/images/blackLine.png" alt="black-line"><span>By Admin</span>
+                                <img src="./assets/images/pointBlog.png" alt="black-point"><span>Building</span>
+                            </div>
+                            <h2 class="card__title">
+                                Practical advice and building
+                                step-by-step.
+                            </h2>
+                            <a href="#" class="card__link card-link_black">
+                                <span>Render</span>
+                                <img src="./assets/images/black-arrow.png" alt="orange arrow">
+                            </a>
+                        </div>
+                        <div class="card card__position">
+                            <div class="card__image">
+                                <img src="./assets/images/worker3.jpg" alt="Worker3">
+                            </div>
+                            <div class="card__text">
+                                <img src="./assets/images/blackLine.png" alt="black line"><span>By Admin</span>
+                                <img src="./assets/images/pointBlog.png" alt="black point"><span>Building</span>
+                            </div>
+                            <h2 class="card__title">
+                                Insights perspective industry from our team.
+                            </h2>
+                            <a href="#" class="card__link">
+                                <span>Render</span>
+                                <img src="./assets/images/orange-arrow.png" alt="orange arrow">
+                            </a>
+                            <div class="cards-image_position-small">
+                                <img src="./assets/images/orangebg.svg" alt="orange-fon">
+                                <span class="cards-image_position-text">24 Jun 2024</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__image">
+                                <img src="./assets/images/worker4.jpg" alt="Worker4">
+                            </div>
+                            <div class="card__text">
+                                <img src="./assets/images/blackLine.png" alt="black line"><span>By Admin</span>
+                                <img src="./assets/images/pointBlog.png" alt="black point"><span>Building</span>
+                            </div>
+                            <h2 class="card__title">
+                                Most successful projects best building case studies.
+                            </h2>
+                            <a href="" class="card__link card-link_black">
+                                <span>Render</span>
+                                <img src="./assets/images/black-arrow.png" alt="orange arrow">
+                            </a>
+                        </div>
+                    <div class="cards-image_position">
+                        <img src="./assets/images/left-screen.svg" alt="drawing">
+                    </div>
+                </div>
+                <button class="card__button" type="button">
+                    <span class="button__text">Read More</span>
+                    <img class="button__image" src="./assets/images/arrow-top.svg" alt="arrow">
+                </button>
+            </section>
+
+            <!-- Our Blog -->
 
 
 
-        <!-- Card Вика -->
+            <!-- Card Вика -->
 
-        <!-- Card Вика -->
+            <!-- Card Вика -->
 
     </main>
-    <footer class="footer" id="contact">
-        <form name="loginForm" class="sign-up_form">
-            <div class="sign-up_form-text">
-                <p class="form-text">Sign up for our newsletter</p>
-                <p class="form-text">to get weekly updates.</p>
-            </div>
-            <div class="sign-up_form-input-box">
-                <div class="input-box__wrap">
-                    <input type="email" class="form__input footer-text" name="email" placeholder="Inter Your Email">
-                    <button class="form-button" name="submitBtn"><img  src="./assets/images/form-button.svg" alt="form-button"></button>
-                </div>
-                <span class="footer-title" id="emailSuccess"></span>
-                <span class="error footer-title" id="emailError"></span>
-            </div>
-        </form>
-        <div class="footer-container">
-            <div class="footer_inner-container">
-                <div class="footer__logo-box">
-                    <div class="footer__logo-box-container">
-                        <img src="./assets/images/footer-logo.svg" alt="footer-logo">
-                        <p class="footer-text">Welcome to consaik, a leader in the industry/sector since</p>
-                        <p class="footer-text">With a passion for excellence and a commitment.</p>
-                    </div>
-                    <div class="footer__logo-box-text">
-                        <p class="footer-title">We are available</p>
-                        <p class="footer-text">Mon - Sat : 10:00Am To 07:30Pm</p>
-                    </div>
-
-                </div>
-                <div class="footer__link-box">
-                    <p class="footer-title">Quick links</p>
-                    <a class="footer-text footer-link" href="#">About us</a>
-                    <a class="footer-text footer-link" href="#">Our services</a>
-                    <a class="footer-text footer-link" href="#">Our team</a>
-                    <a class="footer-text footer-link" href="#pricing">Our pricing</a>
-                    <a class="footer-text footer-link" href="#">Contact us</a>
-                </div>
-                <div class="footer__info-box">
-                    <p class="footer-title">Information</p>
-                    <a class="footer-text footer-link" href="#">Environmental Impact</a>
-                    <a class="footer-text footer-link" href="#">A sustainable Future</a>
-                    <a class="footer-text footer-link" href="#">Architectural Design</a>
-                    <a class="footer-text footer-link" href="#">Structural Engineering</a>
-                    <a class="footer-text footer-link" href="#">Regulatory Compliance</a>
-                </div>
-                <div class="footer__link-social-box">
-                    <p class="footer-title">Social Media</p>
-                    <a class="footer-text footer-link" href="www..." target="_blank">Facebook</a>
-                    <a class="footer-text footer-link" href="www..." target="_blank">Instagram</a>
-                    <a class="footer-text footer-link" href="www..." target="_blank">Twitter</a>
-                    <a class="footer-text footer-link" href="www..." target="_blank">YouTube</a>
-                    <a class="footer-text footer-link" href="www..." target="_blank">LinkedIn</a>
-
-                </div>
-
-            </div>
-            <div class="footer-allrihts">
-                <p class="footer-text">© 1995-2024 All rights for Conbuild exclusive</p>
-            </div>
-        </div>
-
-    </footer>
-
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./projects.js"></script>
     <script src="./script.js"></script>
 </body>
 
