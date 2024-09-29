@@ -20,3 +20,22 @@ const swiper = new Swiper('.mySwiper', {
         }
     }
 });
+
+const swiperTestim = new Swiper('.testimonialsSwiper', {
+    direction: "vertical",
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return `<img class=" ${className} " src = "./assets/images/testimonial${index + 1}.webp">`;
+        },
+    },
+    breakpoints: {
+        768: {
+            direction: "horizontal"
+        },
+        1024: {
+            direction: "vertical"
+        }
+    }
+});
