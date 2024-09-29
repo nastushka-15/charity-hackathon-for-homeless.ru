@@ -771,6 +771,410 @@ body {
 
 // header end
 
+// latest Services начало
+
+%our-blog-headline {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 16px;
+  line-height: 162%;
+}
+
+.section-latest-services {
+  max-width: 1297px;
+  height: 426px;
+  margin: 0 auto;
+  margin-top: 300px;
+  display: flex;
+
+  @media (max-width: 1152px) {
+    justify-content: center;
+  }
+
+  .latest-services {
+    position: relative;
+    max-width: 28rem;
+    max-height: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    @media (max-width: 1152px) {
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 2rem;
+      align-items: center;
+    }
+
+    .latest-services__text {
+      @extend %our-blog-headline;
+      font-family: "JostBold", sans-serif;
+      justify-content: center;
+    }
+
+    .latest-services__title {
+      font-family: "JostBold", sans-serif;
+      font-size: clamp(30px, 4.8vw, 52px);
+      line-height: 62px;
+      margin-top: 1rem;
+      max-width: 26rem;
+      height: 7.8rem;
+    }
+
+    .latest-services__info {
+      font-size: 16px;
+      line-height: 162%;
+      margin-top: 0.5rem;
+      max-width: 28rem;
+      height: 4.8rem;
+      color: rgb(85, 85, 85);
+    }
+
+    .latest-services__button {
+      height: 60px;
+      width: 146px;
+      margin-top: 43px;
+      font-family: "JostBold", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 162%;
+      background-color: white;
+      color: #0e0e0e;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--0e0e0e);
+      transition: 0.5s;
+      box-shadow: 0 0 10px #555555;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $accent-color;
+        color: white;
+        text-decoration: none;
+      }
+
+      &:active {
+        transform: scale(0.99);
+      }
+    }
+    .latest-services__button span {
+      margin-right: 10px;
+    }
+
+    .latest-services__button img {
+      display: block;
+      width: 17px;
+      height: 17px;
+    }
+
+    .latest-services__button:hover img {
+      content: url(../images/arrow-top.svg);
+    }
+
+    .worker-icon {
+      position: absolute;
+      bottom: -2.5rem;
+      right: -2rem;
+    }
+  }
+}
+
+// latest Services конец
+
+// Our Blog начало
+
+@mixin button($width) {
+  height: 60px;
+  width: $width;
+  background-image: linear-gradient(
+    to right,
+    #fb5b11 0%,
+    #f17e49 51%,
+    #fb5b11 100%
+  );
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-family: "JostBold";
+  font-size: 16px;
+  line-height: 26px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 10px #555555;
+  cursor: pointer;
+
+  &:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+}
+
+%our-blog-headline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 162%;
+}
+
+%our-blog-link {
+  font-family: "JostBold", sans-serif;
+  font-size: 16px;
+  line-height: 162%;
+  text-decoration: none;
+  color: $accent-color;
+  gap: 10px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  box-sizing: border-box;
+  width: 7rem;
+  height: 1.6rem;
+}
+
+%order-blog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+%order-blog-text_position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+}
+
+.our-blog {
+  max-width: 1297px;
+  max-height: 1189px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+
+  .our-blog__text {
+    @extend %our-blog-headline;
+    font-family: "JostBold", sans-serif;
+    justify-content: center;
+  }
+
+  .our-blog__title {
+    margin-top: 1rem;
+    align-self: center;
+    text-align: center;
+    font-family: "JostBold", sans-serif;
+    font-size: clamp(30px, 4.8vw, 52px);
+    line-height: 62px;
+    max-width: 40.7rem;
+    height: 4rem;
+  }
+
+  .our-blog__events {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+
+    @media (max-width: 1152px) {
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 2rem;
+      justify-content: center;
+    }
+
+    .events {
+      text-align: start;
+      max-width: 28.7rem;
+      height: 17.3rem;
+
+      @media (max-width: 1152px) {
+        text-align: center;
+      }
+
+      .events__text {
+        @extend %our-blog-headline;
+        color: $gray-text;
+
+        @media (max-width: 1152px) {
+          justify-content: center;
+        }
+      }
+
+      .events__title {
+        margin-top: 1rem;
+        font-family: "JostBold";
+        font-size: 32px;
+        line-height: 42px;
+        max-width: 28.6rem;
+        height: 5.3rem;
+      }
+
+      .events__info {
+        margin-top: 1rem;
+        font-size: 16px;
+        line-height: 26px;
+        color: $gray-text;
+        max-width: 26.2rem;
+        height: 5rem;
+      }
+
+      .events__link {
+        @extend %our-blog-link;
+        margin-top: 2.3rem;
+      }
+    }
+
+    .events__image {
+      max-width: 40rem;
+      height: 22.5rem;
+      position: relative;
+
+      img {
+        @extend %order-blog-image;
+      }
+      .events-image_position {
+        position: absolute;
+        top: 0.6rem;
+        left: -4.4rem;
+        max-width: 8rem;
+
+        @media (max-width: 768px) {
+          left: 1rem;
+        }
+
+        .events-image_position-text {
+          @extend %order-blog-text_position;
+          font-size: 24px;
+          line-height: 34px;
+          width: 4.4rem;
+          height: 4.3rem;
+        }
+      }
+    }
+  }
+
+  .our-blog__cards {
+    max-width: 1297px;
+    display: flex;
+    margin-top: 1.8rem;
+    gap: 1.5rem;
+    position: relative;
+
+    @media (max-width: 1280px) {
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 1.8rem;
+      width: 26rem;
+      height: 32.8rem;
+      border: 1px solid rgb(216, 216, 216);
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+      position: relative;
+
+      .card__text {
+        @extend %our-blog-headline;
+        color: $gray-text;
+        margin-top: 1.4rem;
+      }
+
+      .card__title {
+        margin-top: 1rem;
+        font-family: "JostBold", sans-serif;
+        font-size: 24px;
+        line-height: 34px;
+        width: 22.4rem;
+        height: 4.3rem;
+      }
+
+      .card__link {
+        @extend %our-blog-link;
+        margin-top: 1rem;
+        margin-bottom: 1.4rem;
+      }
+      .card-link_black {
+        color: black;
+      }
+
+      .card__image {
+        width: 22.3rem;
+        height: 18.8rem;
+        align-self: center;
+        position: relative;
+
+        img {
+          @extend %order-blog-image;
+        }
+      }
+    }
+
+    .cards-image_position {
+      position: absolute;
+      left: -18rem;
+      top: 2.7rem;
+      width: 4.5rem;
+    }
+
+    .card__position {
+      position: relative;
+
+      .cards-image_position-small {
+        position: absolute;
+        width: 4.5rem;
+        height: 4.3rem;
+        top: 15rem;
+        right: 2.8rem;
+
+        img {
+          @extend %order-blog-image;
+        }
+
+        .cards-image_position-text {
+          @extend %order-blog-text_position;
+          font-size: 16px;
+          line-height: 26px;
+          width: 3rem;
+          height: 3.2rem;
+        }
+      }
+    }
+  }
+
+  .card__button {
+    @include button(12rem);
+    padding: 1rem 2rem;
+    align-self: center;
+    margin-top: 2.6rem;
+
+    .button__image {
+      width: 1.4rem;
+      height: 100%;
+    }
+  }
+}
+
+// Our Blog конец
+
 // About us start
 
 .about-us {
