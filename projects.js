@@ -30,5 +30,13 @@ const swiperTestim = new Swiper('.testimonialsSwiper', {
         renderBullet: function (index, className) {
             return `<img class=" ${className} " src = "./assets/images/testimonial${index + 1}.webp">`;
         },
+    },
+    breakpoints: {
+        768: {
+            direction: "horizontal"
+        },
+        1024: {
+            direction: "vertical"
+        }
     }
 });
