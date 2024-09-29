@@ -77,7 +77,16 @@ form.addEventListener('submit', function(evt) {
     return regex.test(email);
     }
 
+    // latest слайдер
+    const swiper2 = new Swiper(".latest-mySwiper", {
 
+        centeredSlides: true,
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+          },
+    });
 
 
 
