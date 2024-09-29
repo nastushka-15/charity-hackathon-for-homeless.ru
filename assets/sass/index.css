@@ -605,23 +605,23 @@ body {
   text-align: center;
 }
 .projects .projects__swiper-wrapper .projects__swiper-slide #project1-popover {
-  background-image: url("./assets/images/project1.webp");
+  background-image: url("../images/project1.webp");
   background-size: cover;
 }
 .projects .projects__swiper-wrapper .projects__swiper-slide #project2-popover {
-  background-image: url("./assets/images/project2.webp");
+  background-image: url("../images/project2.webp");
   background-size: cover;
 }
 .projects .projects__swiper-wrapper .projects__swiper-slide #project3-popover {
-  background-image: url("./assets/images/project3.webp");
+  background-image: url("../images/project3.webp");
   background-size: cover;
 }
 .projects .projects__swiper-wrapper .projects__swiper-slide #project4-popover {
-  background-image: url("./assets/images/project4.webp");
+  background-image: url("../images/project4.webp");
   background-size: cover;
 }
 .projects .projects__swiper-wrapper .projects__swiper-slide #project5-popover {
-  background-image: url("./assets/images/project5.webp");
+  background-image: url("../images/project5.webp");
   background-size: cover;
 }
 
